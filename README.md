@@ -11,6 +11,8 @@ If you are here for the data, the files you are probably looking for are the ass
 - The job_title_dictionary contains my list of words and phrases found in job titles.
 
 ### For Developers, ATS's and Search Engines
+If you are here for the data, I publish a database in a MySql format.
+
 I developed a [job title generator](http://www.enlightenjobs.com/job-title-generator.php) that analyzes a job title, matches it to an Assigned Role, and suggests a better job title and keywords, if applicable.  Check out the Developers subfolder for more information.
 
 ### About the Thesaurus of Job Titles
