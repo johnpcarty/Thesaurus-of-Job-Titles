@@ -1,4 +1,4 @@
-Using Synonyms in Elasticsearch
+#Using Synonyms in Elasticsearch
 
 ## Overview
 The synonym-job-titles.txt
