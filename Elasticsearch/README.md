@@ -122,7 +122,7 @@ I check if the jobs index contains any documents.
 
 
 ### Query the jobs index
-I search for data administrator and get results with DBA and Database Administrator
+I search for database admin and get results with DBA and Database Administrator
 
     curl -XGET 'http://localhost:9200/jobs/job/_search?pretty' -H 'Content-Type: application/json' -d '
     {
