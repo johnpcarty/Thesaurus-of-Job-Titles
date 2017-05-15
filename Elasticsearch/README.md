@@ -180,6 +180,34 @@ I check if the jobs index contains any documents.
 ### Query the jobs index
 In this scenario, I write a query that includes each of synonym phrases.  As I understand it (I could be wrong), there are difficulties in trying to implement an multi-word search_analyzer without the analyzer also being used at index time.  This is a work-around where you would expand the query to search for synonyms.
 
+As a comparison, you could query each synonym separately.  First, query for database administrator:
+
+    curl -XGET 'localhost:9200/jobs/job/_search?pretty' -H 'Content-Type: application/json' -d'
+    {
+      "query": {
+           "match_phrase": { "job_title": "database administrator" } 
+       },
+       "size" : 0
+    }
+    '
+
+It returned 27 results.
+
+Second, query for dba:
+
+    curl -XGET 'localhost:9200/jobs/job/_search?pretty' -H 'Content-Type: application/json' -d'
+    {
+      "query": {
+           "match_phrase": { "job_title": "dba" } 
+       },
+       "size" : 0
+    }
+    '
+
+It returned 8 results.
+
+Alternatively, you can write one query that searches for each synonym.
+
     curl -XGET 'localhost:9200/jobs/job/_search?pretty' -H 'Content-Type: application/json' -d'
     {
       "query": {
@@ -190,7 +218,9 @@ In this scenario, I write a query that includes each of synonym phrases.  As I u
           ]
         }
        },
-       "size" : 25
+       "size" : 0
     }
     '
+
+It returned 35 results.
 
