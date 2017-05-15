@@ -1,4 +1,4 @@
-#Thesaurus of Job Titles Technical Details
+# Thesaurus of Job Titles Technical Details
 
 The thesaurus_of_job_titles.sql file contains a version of the database in a MySql format.
 
