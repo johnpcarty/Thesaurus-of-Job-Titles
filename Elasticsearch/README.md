@@ -7,6 +7,8 @@ The purpose of this section is to demonstrate how to include the thesaurus of jo
 I have not figured out how to setup the thesaurus without changing permissions on the Elasticsearch configuration directory.  
 Changing permissions might make it easier for an attacker to exploit your system.
 
+Second, the results are questionable when job titles overlap each other.  When I initially setup the synonyms file, I included synonyms for cyber security.  I found that a search for "security engineer" did not include some jobs that that used the phrase "info security engineer".
+
 ## Demonstration
 I assume you have Elasticsearch running on your local computer.
 
