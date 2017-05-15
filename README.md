@@ -7,11 +7,14 @@ There is a disconnect between how people search for jobs and how those jobs are 
 First things first, you can check out my site [www.EnlightenJobs.com](http://www.enlightenjobs.com) for a easy to use version of the thesaurus.
 
 If you are here for the data, the files you are probably looking for are the assigned_role.txt and the job_title_dictionary.txt.
-- The assigned_role contains my list of detailed occupations along with an abbreviated list of synonyms and searches.
-- The job_title_dictionary contains my list of words and phrases found in job titles.
+- assigned_role.txt - contains my list of detailed occupations along with an abbreviated list of synonyms and searches.
+- job_title_dictionary - contains my list of words and phrases found in job titles.
 
 ### For Developers, ATS's and Search Engines
-If you are here for the data, I publish a database in a MySql format.
+For search engines, I built a synonyms file for Elasticsearch. Check the Elasticsearch folder for a demonstration.
+- synonym_job_titles.txt - a file that contains job title synonyms in a Solr format.
+
+Under the Developers folder, I publish the thesaurus as a database in a MySql format.
 
 I developed a [job title generator](http://www.enlightenjobs.com/job-title-generator.php) that analyzes a job title, matches it to an Assigned Role, and suggests a better job title and keywords, if applicable.  Check out the Developers subfolder for more information.
 
