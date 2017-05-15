@@ -4,7 +4,7 @@ An open source thesaurus of job titles in US English
 There is a disconnect between how people search for jobs and how those jobs are posted.  People search for internships, but jobs are posted for interns.  This is the synonym problem.  It has a solution - a thesaurus.
 
 ### For Job Seekers and Recruiters
-First things first, you can check out my site [www.EnlightenJobs.com](http://www.enlightenjobs.com) for a easy to use version of the thesaurus.
+First things first, you can check out my site [www.EnlightenJobs.com](http://www.enlightenjobs.com) for an online version of the thesaurus.
 
 If you are here for the data, the files you are probably looking for are the assigned_role.txt and the job_title_dictionary.txt.
 - assigned_role.txt - contains my list of detailed occupations along with an abbreviated list of synonyms and searches.
