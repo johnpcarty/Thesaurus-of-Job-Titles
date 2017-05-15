@@ -127,13 +127,32 @@ I search for database admin and get results with DBA and Database Administrator
     curl -XGET 'http://localhost:9200/jobs/job/_search?pretty' -H 'Content-Type: application/json' -d '
     {
        "query" : {
-          "match" : {
+          "match_phrase" : {
              "job_title" : "database admin"
           }
        },
-       "size" : 25
+       "size" : 0
     }
     '
+
+When I ran it, the query returned 25 results.
+
+    {
+      "took" : 8,
+      "timed_out" : false,
+      "_shards" : {
+        "total" : 5,
+        "successful" : 5,
+        "failed" : 0
+      },
+      "hits" : {
+        "total" : 25,
+        "max_score" : 0.0,
+        "hits" : [ ]
+      }
+    }
+
+
 
 ### Fix Permissions
 If you changed the permissions on the /etc/elasticsearch directory, switch them back.
@@ -193,6 +212,22 @@ As a comparison, you could query each synonym separately.  First, query for data
 
 It returned 27 results.
 
+    {
+      "took" : 10,
+      "timed_out" : false,
+      "_shards" : {
+        "total" : 5,
+        "successful" : 5,
+        "failed" : 0
+      },
+      "hits" : {
+        "total" : 27,
+        "max_score" : 0.0,
+        "hits" : [ ]
+      }
+    }
+
+
 Second, query for dba:
 
     curl -XGET 'localhost:9200/jobs/job/_search?pretty' -H 'Content-Type: application/json' -d'
@@ -205,6 +240,21 @@ Second, query for dba:
     '
 
 It returned 8 results.
+
+    {
+      "took" : 9,
+      "timed_out" : false,
+      "_shards" : {
+        "total" : 5,
+        "successful" : 5,
+        "failed" : 0
+      },
+      "hits" : {
+        "total" : 8,
+        "max_score" : 0.0,
+        "hits" : [ ]
+      }
+    }
 
 Alternatively, you can write one query that searches for each synonym.
 
@@ -223,4 +273,27 @@ Alternatively, you can write one query that searches for each synonym.
     '
 
 It returned 35 results.
+
+    {
+      "took" : 19,
+      "timed_out" : false,
+      "_shards" : {
+        "total" : 5,
+        "successful" : 5,
+        "failed" : 0
+      },
+      "hits" : {
+        "total" : 35,
+        "max_score" : 0.0,
+        "hits" : [ ]
+      }
+    }
+
+## Different Results of the Two Demonstrations
+
+The first demonstration, which used the synonyms to index the data, returned 25 results.  The second demonstration, which used synonyms at query time, returned 35 results.  I believe the first method did not include all database administrators because of overlap with other synonyms.  In my thesaurus, I include the phrase "SQL DBA" as a detailed occupation.  When the jobs are indexed using synonyms, the "SQL DBA" jobs get indexed under SQL DBA, but not DBA.  When a user searches for DBA jobs, the SQL DBA jobs are not returned.  Therefore, if you want to deliver the most results, you might want to include synonyms in your query instead of at index time.
+
+
+
+
 
