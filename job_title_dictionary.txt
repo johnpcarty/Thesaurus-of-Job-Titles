@@ -652,7 +652,7 @@ Advanced Registered Nurse	709	assignedrole		Advanced Registered Nurse	7848	rn-ad
 Advanced Registered Nurse Practitioner	710	assignedrole		Advanced Registered Nurse Practitioner	6864	nursepractitioner	12	NULL	NULL	261
 Advanced Supervisor	711	assignedrole		Manager Advanced	5426	manager-advance	3	NULL	NULL	5
 Adventure	712	rolemodifier			NULL		10000	NULL	NULL	3821
-Adventure Therapist	713	assignedrole		Recreational Therapist	9973	therapist-recreation	12	NULL	NULL	6
+Adventure Therapist	713	assignedrole		Recreational Therapist	9973	therapist-recreation	13	NULL	NULL	6
 Advertisement	714	rolemodifier			NULL		10000	NULL	NULL	298
 Advertisement Jobs	715	assignedrole			3868	jobs-advertising	4	NULL	NULL	24
 Advertiser	716	assignedrole		Marketing Analyst	8889	specialist-marketing	8	NULL	NULL	464
@@ -992,7 +992,7 @@ Ambulance Jobs	1107	assignedrole			3889	jobs-ambulance	1	NULL	NULL	432
 Ambulatory	1108	rolemodifier			NULL		10000	NULL	NULL	84334
 Ambulatory Analyst	1109	assignedrole		Ambulatory Analyst	8508	specialist-ambulatory	1	NULL	NULL	33
 Ambulatory Care Nurse	1110	assignedrole		RN Ambulatory	7854	rn-ambulatory	3	NULL	NULL	95
-Ambulatory Coder	1111	assignedrole		Medical Coder	8905	specialist-medicalcoding	22	NULL	NULL	2
+Ambulatory Coder	1111	assignedrole		Medical Coder	8905	specialist-medicalcoding	23	NULL	NULL	2
 Ambulatory Nurse	1113	assignedrole		RN Ambulatory	7854	rn-ambulatory	2	NULL	NULL	95
 Ambulatory Registered Nurse	1114	assignedrole		RN Ambulatory	7854	rn-ambulatory	4	NULL	NULL	60
 Ambulatory Services Representative	1115	assignedrole		Ambulatory Services Representative	7768	representative-ambulatoryservice	1	NULL	NULL	27
@@ -1475,7 +1475,10 @@ Arborist	1635	assignedrole		Arborist	276	arborist	1	NULL	NULL	1825
 Arc	1636	rolemodifier			NULL		10000	NULL	NULL	301
 Archaeologist	1638	assignedrole		Archaeologist	277	archaeologist	1	NULL	NULL	1480
 Archaeology	1639	rolemodifier			NULL		10000	NULL	NULL	910
-Archaeology Professor	1641	assignedrole		Archaeology Professor	7453	professor-archaeology	1	NULL	NULL	3
+Archaeology Professor	1641	assignedrole		Archaeology Professor	7453	professor-archaeology	1	NULL	NULL	5
+Archeologist	40063	assignedrole		Archaeologist	277	archaeologist	2	NULL	NULL	158
+Archeology	40064	rolemodifier			NULL		10000	NULL	NULL	300
+Archeology Professor	40066	assignedrole		Archaeology Professor	7453	professor-archaeology	2	NULL	NULL	3
 Archer	1642	assignedrole		Archer	278	archer	1	NULL	NULL	21072
 Architect	1643	assignedrole		Architect	279	architect	1	NULL	NULL	1976363
 Architect in Training	1644	assignedrole		Architectural Intern	3663	intern-architecture	8	NULL	NULL	6
@@ -2460,11 +2463,11 @@ BH Jobs	2748	assignedrole			4632	jobs-mentalhealth	5	NULL	NULL	215
 BI	2749	ambiguous	BI could refer to Business Intelligence, Brain Injury, or Biweekly.		NULL		10000	NULL	NULL	281280
 BI Analyst	2750	assignedrole		Business Intelligence Analyst	163	analyst-businessintelligence	2	NULL	NULL	1196
 BI Architect	2751	assignedrole		Data Architect	281	architect-data	5	NULL	NULL	340
-BI Consultant	2752	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	5	NULL	NULL	185
-BI Developer	2753	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	1	NULL	NULL	5537
+BI Consultant	2752	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	8	NULL	NULL	185
+BI Developer	2753	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	2	NULL	NULL	5537
 Bi Lingual	2754	misspelled	Bilingual does not require a space or hyphen.	Bilingual	NULL		10000	NULL	NULL	683
 BI Manager	2755	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	3	NULL	NULL	51
-BI Supervisor	2756	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	7	NULL	NULL	1
+BI Supervisor	2756	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	14	NULL	NULL	1
 Bi Weekly	2757	misspelled	Biweekly does not require a space or hyphen.	Biweekly	NULL		10000	NULL	NULL	150936
 Bi Wkly	2758	misspelled	Biweekly does not require a space or hyphen.	Biweekly	NULL		10000	NULL	NULL	2
 Bible	2759	rolemodifier			NULL		10000	NULL	NULL	3292
@@ -2617,7 +2620,7 @@ Biology Technician	2916	assignedrole		Biological Science Technician	9629	tech-bi
 Biomass	2917	rolemodifier			NULL		10000	NULL	NULL	182
 Biomass Plant	2919	rolemodifier			NULL		10000	NULL	NULL	15
 Biomass Power Plant	2921	rolemodifier			NULL		10000	NULL	NULL	16
-Biomathematician	2923	assignedrole		Biomathematician	713	biomathematician	1	NULL	NULL	6
+Biomathematician	2923	assignedrole		Biostatistician	715	biostatistician	4	NULL	NULL	6
 Biomechanical	2924	rolemodifier			NULL		10000	NULL	NULL	162
 Biomed	2926	rolemodifier			NULL		10000	NULL	NULL	2880
 Biomed Equipment Technician	2927	assignedrole		Biomedical Equipment Technician	9630	tech-biomedicalequipment	6	NULL	NULL	9
@@ -3186,7 +3189,7 @@ Bus Excellence	3590	rolemodifier	Try Business Excellence.	Business Excellence	NU
 Bus Excellence Jobs	3591	assignedrole			4847	jobs-qualityimprovement	25	NULL	NULL	5
 Bus Girl	3592	assignedrole		Busser	839	busperson	6	NULL	NULL	16
 Bus Info	3593	rolemodifier	Try Business Information.	Business Information	NULL		10000	NULL	NULL	10767
-Bus Info Consultant	3594	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	7	NULL	NULL	168
+Bus Info Consultant	3594	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	10	NULL	NULL	168
 Bus Info Jobs	3595	assignedrole			4000	jobs-businessintelligence	3	NULL	NULL	401
 Bus Information	3596	rolemodifier	Try Business Information.	Business Information	NULL		10000	NULL	NULL	20
 Bus Information Jobs	3597	assignedrole			4000	jobs-businessintelligence	5	NULL	NULL	1
@@ -3277,25 +3280,25 @@ Business Executive	3684	assignedrole		Corporate Executive	3116	executive-busines
 Business Improvement	3685	rolemodifier			NULL		10000	NULL	NULL	11
 Business Improvement Jobs	3686	assignedrole			4847	jobs-qualityimprovement	18	NULL	NULL	40
 Business Info	3687	rolemodifier	Try Business Information.	Business Information	NULL		10000	NULL	NULL	1729
-Business Info Consultant	3688	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	9	NULL	NULL	56
+Business Info Consultant	3688	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	12	NULL	NULL	56
 Business Info Jobs	3689	assignedrole			4000	jobs-businessintelligence	4	NULL	NULL	119
 Business Information	3690	rolemodifier		Business Intelligence	NULL		10000	NULL	NULL	178
-Business Information Consultant	3691	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	3	NULL	NULL	554
+Business Information Consultant	3691	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	5	NULL	NULL	554
 Business Information Jobs	3692	assignedrole			4000	jobs-businessintelligence	2	NULL	NULL	1274
-Business Information Manager	3693	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	4	NULL	NULL	13
-Business Information Supervisor	3694	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	8	NULL	NULL	1
+Business Information Manager	3693	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	8	NULL	NULL	13
+Business Information Supervisor	3694	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	19	NULL	NULL	1
 Business Intelligence	3695	rolemodifier			NULL		10000	NULL	NULL	13319
 Business Intelligence Analyst	3696	assignedrole		Business Intelligence Analyst	163	analyst-businessintelligence	1	NULL	NULL	7063
 Business Intelligence Architect	3697	assignedrole		Data Architect	281	architect-data	4	NULL	NULL	451
-Business Intelligence Consultant	3698	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	8	NULL	NULL	116
-Business Intelligence Developer	3699	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	2	NULL	NULL	2293
+Business Intelligence Consultant	3698	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	11	NULL	NULL	116
+Business Intelligence Developer	3699	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	3	NULL	NULL	2293
 Business Intelligence Director	3700	assignedrole		Director Business Intelligence	1985	director-businessintelligence	3	NULL	NULL	50
-Business Intelligence Engineer	3701	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	4	NULL	NULL	219
+Business Intelligence Engineer	3701	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	7	NULL	NULL	219
 Business Intelligence Jobs	3702	assignedrole			4000	jobs-businessintelligence	1	NULL	NULL	30100
-Business Intelligence Lead	3703	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	10	NULL	NULL	27
+Business Intelligence Lead	3703	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	16	NULL	NULL	27
 Business Intelligence Manager	3704	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	1	NULL	NULL	327
-Business Intelligence Specialist	3705	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	6	NULL	NULL	172
-Business Intelligence Supervisor	3706	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	5	NULL	NULL	10
+Business Intelligence Specialist	3705	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	9	NULL	NULL	172
+Business Intelligence Supervisor	3706	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	10	NULL	NULL	10
 Business Intern	3707	assignedrole		Business Intern	3671	intern-business	1	NULL	NULL	152
 Business Internship	3708	assignedrole		Business Intern	3671	intern-business	2	NULL	NULL	44
 Business Jobs	3709	assignedrole			3996	jobs-business	1	NULL	NULL	1612704
@@ -5236,7 +5239,7 @@ Clinic Administrator	5882	assignedrole		Clinic Administrator	57	administrator-cl
 Clinic Assistant	5883	assignedrole		Clinical Assistant	368	assistant-clinical	2	NULL	NULL	506
 Clinic Charge Nurse	5884	assignedrole		Clinic Charge Nurse	7883	rn-clinicalcharge	1	NULL	NULL	7
 Clinic CMA	5885	assignedrole		Medical Assistant	431	assistant-medical	13	NULL	NULL	31
-Clinic Coder	5886	assignedrole		Medical Coder	8905	specialist-medicalcoding	21	NULL	NULL	4
+Clinic Coder	5886	assignedrole		Medical Coder	8905	specialist-medicalcoding	22	NULL	NULL	4
 Clinic Coordinator	5887	assignedrole		Clinical Coordinator	1106	clerk-clinical	2	NULL	NULL	102
 Clinic Director	5888	assignedrole		Clinical Director	2029	director-clinical	6	NULL	NULL	250
 Clinic Jobs	5889	assignedrole			4083	jobs-clinical	2	NULL	NULL	38217
@@ -7715,10 +7718,10 @@ Data Conversion	8644	rolemodifier			NULL		10000	NULL	NULL	1519
 Data Conversion Operator	8646	assignedrole		Data Conversion Operator	7025	operator-dataconversion	1	NULL	NULL	14
 Data Coord	8647	assignedrole		Data Coordinator	1137	clerk-data	7	NULL	NULL	8
 Data Coordinator	8648	assignedrole		Data Coordinator	1137	clerk-data	1	NULL	NULL	1007
-Data Designer	8649	assignedrole		Database Developer	1876	developer-database	11	NULL	NULL	55
-Data Developer	8650	assignedrole		Database Developer	1876	developer-database	9	NULL	NULL	179
+Data Designer	8649	assignedrole		Database Developer	1876	developer-database	9	NULL	NULL	55
+Data Developer	8650	assignedrole		Database Developer	1876	developer-database	7	NULL	NULL	179
 Data Director	8651	assignedrole		Director Data	2088	director-data	2	NULL	NULL	60
-Data Engineer	8652	assignedrole		Database Developer	1876	developer-database	4	NULL	NULL	3817
+Data Engineer	8652	assignedrole		Database Developer	1876	developer-database	3	NULL	NULL	3817
 Data Entry	8653	rolemodifier			NULL		10000	NULL	NULL	12511
 Data Entry Analyst	8654	assignedrole		Data Entry Clerk	8660	specialist-dataentry	5	NULL	NULL	57
 Data Entry Assistant	8655	assignedrole		Data Entry Clerk	8660	specialist-dataentry	4	NULL	NULL	58
@@ -7753,7 +7756,7 @@ Data Mgmt	8684	rolemodifier	Try Data Management.	Data Management	NULL		10000	NUL
 Data Migration	8686	rolemodifier			NULL		10000	NULL	NULL	1003
 Data Migration Lead	8687	assignedrole		Data Migration Lead	8662	specialist-datamigration	1	NULL	NULL	23
 Data Mining Analyst	8688	assignedrole		Data Mining Analyst	8663	specialist-datamining	1	NULL	NULL	56
-Data Modeler	8689	assignedrole		Database Developer	1876	developer-database	6	NULL	NULL	3005
+Data Modeler	8689	assignedrole		Database Developer	1876	developer-database	5	NULL	NULL	3005
 Data Operations	8690	rolemodifier			NULL		10000	NULL	NULL	160
 Data Operations Jobs	8691	assignedrole			4180	jobs-dataprocessing	2	NULL	NULL	119
 Data Operations Leader	8692	assignedrole		Data Operations Manager	5717	manager-dataprocessing	3	NULL	NULL	6
@@ -7766,7 +7769,7 @@ Data Processing Jobs	8698	assignedrole			4180	jobs-dataprocessing	1	NULL	NULL	35
 Data Processing Manager	8699	assignedrole		Data Operations Manager	5717	manager-dataprocessing	2	NULL	NULL	26
 Data Processing Supervisor	8700	assignedrole		Data Operations Manager	5717	manager-dataprocessing	4	NULL	NULL	3
 Data Processor	8701	assignedrole		Data Processor	7409	processor-data	1	NULL	NULL	242
-Data Programmer	8702	assignedrole		Database Developer	1876	developer-database	10	NULL	NULL	56
+Data Programmer	8702	assignedrole		Database Developer	1876	developer-database	8	NULL	NULL	56
 Data Reporting	8703	rolemodifier			NULL		10000	NULL	NULL	575
 Data Reporting Analyst	8704	assignedrole		Data Reporting Analyst	175	analyst-datareporting	1	NULL	NULL	312
 Data Review Specialist	8705	assignedrole		Data Review Specialist	8664	specialist-datareview	1	NULL	NULL	10
@@ -7796,22 +7799,22 @@ Data Technician	8728	assignedrole		Data Analyst	173	analyst-data	5	NULL	NULL	172
 Data Transcriber	8729	assignedrole		Data Transcriber	10056	transcriber-data	1	NULL	NULL	26
 Data Validation	8730	rolemodifier			NULL		10000	NULL	NULL	245
 Data Warehouse	8731	rolemodifier			NULL		10000	NULL	NULL	4975
-Data Warehouse Analyst	8732	assignedrole		Data Warehouse Analyst	176	analyst-datawarehouse	2	NULL	NULL	200
+Data Warehouse Analyst	8732	assignedrole		Business Intelligence Analyst	163	analyst-businessintelligence	3	NULL	NULL	200
 Data Warehouse Architect	8733	assignedrole		Data Architect	281	architect-data	6	NULL	NULL	274
-Data Warehouse Consultant	8734	assignedrole		Data Warehouse Analyst	176	analyst-datawarehouse	1	NULL	NULL	723
-Data Warehouse Developer	8735	assignedrole		Database Developer	1876	developer-database	7	NULL	NULL	487
-Data Warehouse Director	8736	assignedrole		Director Database	2090	director-database	3	NULL	NULL	10
+Data Warehouse Consultant	8734	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	4	NULL	NULL	723
+Data Warehouse Developer	8735	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	6	NULL	NULL	487
+Data Warehouse Director	8736	assignedrole		Director Business Intelligence	1985	director-businessintelligence	5	NULL	NULL	10
 Data Warehouse Jobs	8737	assignedrole			4181	jobs-datawarehouse	1	NULL	NULL	8576
-Data Warehouse Lead	8738	assignedrole		Data Warehouse Analyst	176	analyst-datawarehouse	7	NULL	NULL	17
-Data Warehouse Manager	8739	assignedrole		Data Warehousing Manager	5718	manager-datawarehouse	3	NULL	NULL	34
-Data Warehouse Specialist	8740	assignedrole		Data Warehouse Analyst	176	analyst-datawarehouse	6	NULL	NULL	22
-Data Warehouse Supervisor	8741	assignedrole		Data Warehousing Manager	5718	manager-datawarehouse	10	NULL	NULL	1
+Data Warehouse Lead	8738	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	18	NULL	NULL	17
+Data Warehouse Manager	8739	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	6	NULL	NULL	34
+Data Warehouse Specialist	8740	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	17	NULL	NULL	22
+Data Warehouse Supervisor	8741	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	17	NULL	NULL	1
 Data Warehousing	8742	rolemodifier			NULL		10000	NULL	NULL	11662
-Data Warehousing Engineer	8743	assignedrole		Database Developer	1876	developer-database	15	NULL	NULL	3
+Data Warehousing Engineer	8743	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	20	NULL	NULL	3
 Data Warehousing Jobs	8744	assignedrole			4181	jobs-datawarehouse	3	NULL	NULL	1524
-Data Warehousing Manager	8745	assignedrole		Data Warehousing Manager	5718	manager-datawarehouse	2	NULL	NULL	36
-Data Warehousing Specialist	8746	assignedrole		Data Warehouse Analyst	176	analyst-datawarehouse	8	NULL	NULL	7
-Data Warehousing Supervisor	8747	assignedrole		Data Warehousing Manager	5718	manager-datawarehouse	11	NULL	NULL	1
+Data Warehousing Manager	8745	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	5	NULL	NULL	36
+Data Warehousing Specialist	8746	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	19	NULL	NULL	7
+Data Warehousing Supervisor	8747	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	18	NULL	NULL	1
 Database	8748	rolemodifier			NULL		10000	NULL	NULL	32266
 Database Admin	8749	assignedrole		Database Administrator	61	administrator-database	5	NULL	NULL	436
 Database Administration	8750	rolemodifier			NULL		10000	NULL	NULL	728
@@ -7823,15 +7826,15 @@ Database Architect	8756	assignedrole		Data Architect	281	architect-data	3	NULL	N
 Database Consultant	8757	assignedrole		Database Analyst	174	analyst-database	4	NULL	NULL	93
 Database Coordinator	8758	assignedrole		Database Analyst	174	analyst-database	6	NULL	NULL	51
 Database DBA	8759	assignedrole		Database Administrator	61	administrator-database	6	NULL	NULL	93
-Database Designer	8760	assignedrole		Database Developer	1876	developer-database	12	NULL	NULL	48
+Database Designer	8760	assignedrole		Database Developer	1876	developer-database	10	NULL	NULL	48
 Database Developer	8761	assignedrole		Database Developer	1876	developer-database	2	NULL	NULL	6901
-Database Engineer	8762	assignedrole		Database Developer	1876	developer-database	5	NULL	NULL	3086
+Database Engineer	8762	assignedrole		Database Developer	1876	developer-database	4	NULL	NULL	3086
 Database Jobs	8763	assignedrole			4178	jobs-database	1	NULL	NULL	62440
 Database Manager	8764	assignedrole		Database Administrator	61	administrator-database	3	NULL	NULL	570
 Database Marketing	8765	rolemodifier			NULL		10000	NULL	NULL	886
 Database Marketing Analyst	8766	assignedrole		Database Marketing Analyst	8659	specialist-databasemarketing	1	NULL	NULL	84
-Database Modeler	8768	assignedrole		Database Developer	1876	developer-database	13	NULL	NULL	32
-Database Programmer	8769	assignedrole		Database Developer	1876	developer-database	8	NULL	NULL	349
+Database Modeler	8768	assignedrole		Database Developer	1876	developer-database	11	NULL	NULL	32
+Database Programmer	8769	assignedrole		Database Developer	1876	developer-database	6	NULL	NULL	349
 Database Security	8770	rolemodifier			NULL		10000	NULL	NULL	297
 Database Security Administrator	8771	assignedrole		Database Security Administrator	94	administrator-security	4	NULL	NULL	3
 Database Security Expert	8772	assignedrole		Information Security Analyst	209	analyst-itsecurity	33	NULL	NULL	3
@@ -7845,10 +7848,10 @@ Database Tester	8779	assignedrole		Database Analyst	174	analyst-database	11	NULL
 Datastage Developer	8780	assignedrole		Datastage Developer	1877	developer-datastage	1	NULL	NULL	238
 Datastage Mdm Developer	8781	assignedrole		Datastage Developer	1877	developer-datastage	2	NULL	NULL	7
 Datawarehouse	8782	rolemodifier			NULL		10000	NULL	NULL	267
-Datawarehouse Developer	8783	assignedrole		Database Developer	1876	developer-database	14	NULL	NULL	30
+Datawarehouse Developer	8783	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	15	NULL	NULL	30
 Datawarehouse Jobs	8784	assignedrole			4181	jobs-datawarehouse	4	NULL	NULL	93
-Datawarehouse Manager	8785	assignedrole		Data Warehousing Manager	5718	manager-datawarehouse	6	NULL	NULL	7
-Datawarehouse Supervisor	8786	assignedrole		Data Warehousing Manager	5718	manager-datawarehouse	9	NULL	NULL	1
+Datawarehouse Manager	8785	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	11	NULL	NULL	7
+Datawarehouse Supervisor	8786	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	16	NULL	NULL	1
 Datawarehousing	8787	rolemodifier			NULL		10000	NULL	NULL	44
 Datawarehousing Jobs	8788	assignedrole			4181	jobs-datawarehouse	5	NULL	NULL	40
 Dater	8789	assignedrole		Dater	1761	dater	1	NULL	NULL	27
@@ -8722,8 +8725,8 @@ Director Business Continuity	9723	assignedrole		Business Continuity Manager	5526
 Director Business Development	9724	assignedrole		Director of Business Development	1984	director-businessdev	4	NULL	NULL	1903
 Director Business Excellence	9725	assignedrole		Director Process Improvement	2413	director-qualityimprovement	28	NULL	NULL	3
 Director Business Improvement	9726	assignedrole		Director Process Improvement	2413	director-qualityimprovement	25	NULL	NULL	4
-Director Business Info	9727	assignedrole		Director Business Intelligence	1985	director-businessintelligence	5	NULL	NULL	2
-Director Business Information	9728	assignedrole		Director Business Intelligence	1985	director-businessintelligence	4	NULL	NULL	4
+Director Business Info	9727	assignedrole		Director Business Intelligence	1985	director-businessintelligence	7	NULL	NULL	2
+Director Business Information	9728	assignedrole		Director Business Intelligence	1985	director-businessintelligence	6	NULL	NULL	4
 Director Business Intelligence	9729	assignedrole		Director Business Intelligence	1985	director-businessintelligence	1	NULL	NULL	143
 Director Business Management	9730	assignedrole		Director Business Management	1986	director-businessmanagement	1	NULL	NULL	20
 Director Business Operations	9731	assignedrole		Director of Business Operations	1988	director-businessoperation	2	NULL	NULL	50
@@ -8867,10 +8870,10 @@ Director Cyber Security	9868	assignedrole		Director Information Security	2242	di
 Director Data	9869	assignedrole		Director Data	2088	director-data	1	NULL	NULL	206
 Director Data Analysis	9870	assignedrole		Director Data Analytics	2089	director-dataanalysi	3	NULL	NULL	3
 Director Data Analytics	9871	assignedrole		Director Data Analytics	2089	director-dataanalysi	1	NULL	NULL	45
-Director Data Base	9872	assignedrole		Director Database	2090	director-database	5	NULL	NULL	3
+Director Data Base	9872	assignedrole		Director Database	2090	director-database	3	NULL	NULL	3
 Director Data Center	9873	assignedrole		Data Center Manager	5715	manager-datacenter	3	NULL	NULL	30
 Director Data Management	9874	assignedrole		Director Data Management	2091	director-datamanagement	1	NULL	NULL	41
-Director Data Warehouse	9875	assignedrole		Director Database	2090	director-database	2	NULL	NULL	17
+Director Data Warehouse	9875	assignedrole		Director Business Intelligence	1985	director-businessintelligence	4	NULL	NULL	17
 Director Database	9876	assignedrole		Director Database	2090	director-database	1	NULL	NULL	30
 Director Day Care	9877	assignedrole		Daycare Director	2092	director-daycare	13	NULL	NULL	3
 Director Daycare	9878	assignedrole		Daycare Director	2092	director-daycare	12	NULL	NULL	3
@@ -9122,7 +9125,7 @@ Director IS	10123	assignedrole		Director Software Development	2467	director-soft
 Director IT	10124	assignedrole		Director IT	2221	director-infotech	1	NULL	NULL	2531
 Director IT Applications	10125	assignedrole		Director Software	1952	director-application	8	NULL	NULL	13
 Director IT Business	10126	assignedrole		Director IT Business	2221	director-infotech	17	NULL	NULL	6
-Director IT Database	10127	assignedrole		Director Database	2090	director-database	6	NULL	NULL	2
+Director IT Database	10127	assignedrole		Director Database	2090	director-database	4	NULL	NULL	2
 Director IT Program	10128	assignedrole		Director IT Program	2221	director-infotech	16	NULL	NULL	6
 Director IT Project	10129	assignedrole		Director IT Project	2223	director-infotechproject	1	NULL	NULL	14
 Director IT Security	10130	assignedrole		Director Information Security	2242	director-itsecurity	4	NULL	NULL	20
@@ -9452,7 +9455,7 @@ Director of Data	10453	assignedrole		Director Data	2088	director-data	3	NULL	NUL
 Director of Data Analytics	10454	assignedrole		Director Data Analytics	2089	director-dataanalysi	2	NULL	NULL	7
 Director of Data Center	10455	assignedrole		Data Center Manager	5715	manager-datacenter	6	NULL	NULL	3
 Director of Data Management	10456	assignedrole		Director Data Management	2091	director-datamanagement	2	NULL	NULL	17
-Director of Database	10457	assignedrole		Director Database	2090	director-database	4	NULL	NULL	7
+Director of Database	10457	assignedrole		Director Database	2090	director-database	2	NULL	NULL	7
 Director of Day Care	10458	assignedrole		Daycare Director	2092	director-daycare	14	NULL	NULL	3
 Director of Daycare	10459	assignedrole		Daycare Director	2092	director-daycare	9	NULL	NULL	6
 Director of Decision Support	10460	assignedrole		Director Decision Support	2093	director-decisionsupport	2	NULL	NULL	5
@@ -10834,7 +10837,7 @@ Drama	11893	rolemodifier			NULL		10000	NULL	NULL	1610
 Drama Director	11894	assignedrole		Drama Director	2108	director-drama	1	NULL	NULL	5
 Drama Professor	11896	assignedrole		Drama Professor	7482	professor-drama	1	NULL	NULL	10
 Drama Teacher	11897	assignedrole		Drama Teacher	9463	teacher-drama	1	NULL	NULL	15
-Drama Therapist	11898	assignedrole		Recreational Therapist	9973	therapist-recreation	10	NULL	NULL	10
+Drama Therapist	11898	assignedrole		Recreational Therapist	9973	therapist-recreation	11	NULL	NULL	10
 Dramatic	11899	rolemodifier			NULL		10000	NULL	NULL	220
 Dramatist	11901	assignedrole		Dramatist	2619	dramatist	1	NULL	NULL	32
 Draper	11902	assignedrole		Draper	2620	draper	1	NULL	NULL	1620
@@ -12391,14 +12394,14 @@ Ethnologist	13599	assignedrole		Ethnologist	3095	ethnologist	1	NULL	NULL	27
 Ethnology	13600	rolemodifier			NULL		10000	NULL	NULL	73
 Etiologist	13602	assignedrole		Etiologist	3096	etiologist	1	NULL	NULL	32
 ETL	13603	rolemodifier			NULL		10000	NULL	NULL	5066
-ETL Analyst	13604	assignedrole		Data Warehouse Analyst	176	analyst-datawarehouse	3	NULL	NULL	58
+ETL Analyst	13604	assignedrole		Business Intelligence Analyst	163	analyst-businessintelligence	4	NULL	NULL	58
 ETL Architect	13605	assignedrole		Data Architect	281	architect-data	7	NULL	NULL	219
-ETL Consultant	13606	assignedrole		Data Warehouse Analyst	176	analyst-datawarehouse	5	NULL	NULL	39
-ETL Developer	13607	assignedrole		Database Developer	1876	developer-database	3	NULL	NULL	6549
+ETL Consultant	13606	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	14	NULL	NULL	39
+ETL Developer	13607	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	1	NULL	NULL	6549
 ETL Jobs	13608	assignedrole			4181	jobs-datawarehouse	2	NULL	NULL	6434
-ETL Lead	13609	assignedrole		Data Warehouse Analyst	176	analyst-datawarehouse	4	NULL	NULL	55
-ETL Manager	13610	assignedrole		Data Warehousing Manager	5718	manager-datawarehouse	1	NULL	NULL	45
-ETL Supervisor	13611	assignedrole		Data Warehousing Manager	5718	manager-datawarehouse	8	NULL	NULL	1
+ETL Lead	13609	assignedrole		Business Intelligence Developer	1873	developer-businessintelligence	13	NULL	NULL	55
+ETL Manager	13610	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	4	NULL	NULL	45
+ETL Supervisor	13611	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	15	NULL	NULL	1
 Etymologist	13612	assignedrole		Etymologist	3097	etymologist	1	NULL	NULL	49
 Etymology	13613	rolemodifier			NULL		10000	NULL	NULL	301
 Etymology Professor	13615	assignedrole		Etymology Professor	7493	professor-etymology	1	NULL	NULL	3
@@ -13391,7 +13394,7 @@ Fitness Personal Trainer	14723	assignedrole		Fitness Personal Trainer	10040	trai
 Fitness Professional	14724	assignedrole		Exercise Instructor	3608	instructor-exercise	10	NULL	NULL	131
 Fitness Specialist	14725	assignedrole		Exercise Instructor	3608	instructor-exercise	6	NULL	NULL	987
 Fitness Supervisor	14726	assignedrole		Fitness Manager	5853	manager-fitness	7	NULL	NULL	10
-Fitness Teacher	14727	assignedrole		Fitness Teacher	9483	teacher-exercise	1	NULL	NULL	5
+Fitness Teacher	14727	assignedrole		PE Teacher	9565	teacher-physicaleducation	3	NULL	NULL	5
 Fitness Technician	14728	assignedrole		Exercise Planner	8750	specialist-exercise	4	NULL	NULL	6
 Fitness Trainer	14729	assignedrole		Exercise Instructor	3608	instructor-exercise	5	NULL	NULL	1372
 Fitness Worker	14730	assignedrole		Exercise Instructor	3608	instructor-exercise	13	NULL	NULL	3
@@ -15527,7 +15530,7 @@ HIM Associate	17140	assignedrole		Medical Records Technician	9646	tech-healthinf
 HIM Clerk	17141	assignedrole		HIM Clerk	1184	clerk-healthinfo	1	NULL	NULL	261
 HIM Coder	17142	assignedrole		Medical Coder	8905	specialist-medicalcoding	10	NULL	NULL	150
 HIM Coding Specialist	17143	assignedrole		Medical Coder	8905	specialist-medicalcoding	12	NULL	NULL	64
-HIM Coding Tech	17144	assignedrole		HIM Coding Tech	9821	technician-medicalcoding	1	NULL	NULL	6
+HIM Coding Tech	17144	assignedrole		Medical Coder	8905	specialist-medicalcoding	17	NULL	NULL	6
 HIM Consultant	17145	assignedrole		Medical Records Technician	9646	tech-healthinfo	22	NULL	NULL	9
 HIM Director	17146	assignedrole		HIM Director	2193	director-healthinfo	1	NULL	NULL	144
 HIM Jobs	17147	assignedrole			4414	jobs-healthinfo	1	NULL	NULL	11712
@@ -15722,6 +15725,7 @@ Horseman	17363	assignedrole		Horseman	3496	horseman	1	NULL	NULL	49
 Horseshoer	17364	assignedrole		Horseshoer	3497	horseshoer	1	NULL	NULL	22
 Horticultural	17365	rolemodifier			NULL		10000	NULL	NULL	280
 Horticultural Jobs	17366	assignedrole			4439	jobs-horticulture	2	NULL	NULL	50
+Horticultural Therapist	17367	assignedrole		Recreational Therapist	9973	therapist-recreation	10	NULL	NULL	11
 Horticulture	17368	rolemodifier			NULL		10000	NULL	NULL	2365
 Horticulture Jobs	17369	assignedrole			4439	jobs-horticulture	1	NULL	NULL	780
 Horticulture Manager	17370	assignedrole		Horticulture Supervisor	5959	manager-horticulture	2	NULL	NULL	3
@@ -15781,7 +15785,7 @@ Hospital Librarian	17426	assignedrole		Medical Librarian	5298	librarian-medical	
 Hospital Manager	17427	assignedrole		Hospital Supervisor	5963	manager-hospital	4	NULL	NULL	21
 Hospital Medical	17428	rolemodifier			NULL		10000	NULL	NULL	554
 Hospital Medical Attendant	17429	assignedrole		Medical Assistant	431	assistant-medical	20	NULL	NULL	1
-Hospital Medical Coder	17430	assignedrole		Hospital Medical Coder	8905	specialist-medicalcoding	17	NULL	NULL	6
+Hospital Medical Coder	17430	assignedrole		Hospital Medical Coder	8905	specialist-medicalcoding	18	NULL	NULL	6
 Hospital Medicine	17431	rolemodifier			NULL		10000	NULL	NULL	592
 Hospital Monitor	17433	assignedrole		Monitor Tech	9658	tech-monitor	10	NULL	NULL	32
 Hospital Nurse	17434	assignedrole		RN Hospital	7941	rn-hospital	3	NULL	NULL	144
@@ -16932,7 +16936,7 @@ Insurance Claims Manager	18682	assignedrole		Insurance Claims Supervisor	6012	ma
 Insurance Claims Specialist	18683	assignedrole		Insurance Claims Specialist	8837	specialist-insuranceclaim	1	NULL	NULL	26
 Insurance Claims Supervisor	18684	assignedrole		Insurance Claims Supervisor	6012	manager-insuranceclaim	1	NULL	NULL	7
 Insurance Clerk	18685	assignedrole		Insurance Clerk	1212	clerk-insurance	1	NULL	NULL	77
-Insurance Coder	18686	assignedrole		Medical Coder	8905	specialist-medicalcoding	18	NULL	NULL	5
+Insurance Coder	18686	assignedrole		Medical Coder	8905	specialist-medicalcoding	19	NULL	NULL	5
 Insurance Collector	18687	assignedrole		Insurance Collector	1485	collector-insurance	1	NULL	NULL	23
 Insurance Consultant	18688	assignedrole		Insurance Consultant	1555	consultant-insurance	1	NULL	NULL	196
 Insurance Coordinator	18689	assignedrole		Insurance Clerk	1212	clerk-insurance	2	NULL	NULL	42
@@ -19251,7 +19255,7 @@ Manager Business	21269	assignedrole		Business Manager	5523	manager-business	2	NU
 Manager Business Banking	21270	assignedrole		Manager Business Banking	5525	manager-businessbanking	1	NULL	NULL	65
 Manager Business Continuity	21271	assignedrole		Business Continuity Manager	5526	manager-businesscontinuity	5	NULL	NULL	4
 Manager Business Development	21272	assignedrole		Business Development Manager	5527	manager-businessdev	2	NULL	NULL	778
-Manager Business Information	21273	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	6	NULL	NULL	3
+Manager Business Information	21273	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	13	NULL	NULL	3
 Manager Business Intelligence	21274	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	2	NULL	NULL	206
 Manager Business Management	21275	assignedrole		Manager Business Management	5529	manager-businessmanagement	1	NULL	NULL	8
 Manager Business Operations	21276	assignedrole		Business Operations Manager	5531	manager-businessoperation	2	NULL	NULL	70
@@ -19385,8 +19389,8 @@ Manager Dairy	21403	assignedrole		Dairy Manager	5711	manager-dairy	2	NULL	NULL	1
 Manager Data	21404	assignedrole		Data Manager	5712	manager-data	2	NULL	NULL	590
 Manager Data Center	21405	assignedrole		Data Center Manager	5715	manager-datacenter	2	NULL	NULL	139
 Manager Data Management	21406	assignedrole		Data Manager	5712	manager-data	7	NULL	NULL	60
-Manager Data Warehouse	21407	assignedrole		Data Warehousing Manager	5718	manager-datawarehouse	4	NULL	NULL	20
-Manager Data Warehousing	21408	assignedrole		Data Warehousing Manager	5718	manager-datawarehouse	5	NULL	NULL	12
+Manager Data Warehouse	21407	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	7	NULL	NULL	20
+Manager Data Warehousing	21408	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	9	NULL	NULL	12
 Manager Database	21409	assignedrole		Database Administrator	61	administrator-database	7	NULL	NULL	76
 Manager Database Administration	21410	assignedrole		DBA Manager	5714	manager-databaseadministration	2	NULL	NULL	18
 Manager Decision Support	21411	assignedrole		Decision Support Manager	5719	manager-decisionsupport	2	NULL	NULL	10
@@ -19469,7 +19473,7 @@ Manager ER	21487	assignedrole		Manager Emergency Department	5782	manager-emergen
 Manager ERP	21488	assignedrole		Manager ERP	5809	manager-erp	1	NULL	NULL	80
 Manager Estate	21489	assignedrole		Estate Manager	5812	manager-estate	2	NULL	NULL	17
 Manager Ethics	21490	assignedrole		Compliance Manager	5656	manager-compliance	6	NULL	NULL	10
-Manager ETL	21491	assignedrole		Data Warehousing Manager	5718	manager-datawarehouse	7	NULL	NULL	6
+Manager ETL	21491	assignedrole		Business Intelligence Manager	5528	manager-businessintelligence	12	NULL	NULL	6
 Manager Event	21492	assignedrole		Event Manager	5814	manager-event	6	NULL	NULL	53
 Manager Exchange	21493	assignedrole		Manager Exchange	5816	manager-exchange	1	NULL	NULL	13
 Manager Export	21494	assignedrole		Export Manager	5817	manager-export	3	NULL	NULL	7
@@ -20997,10 +21001,10 @@ Medical Information Officer	23077	assignedrole		Medical Information Officer	6983
 Medical Information Supervisor	23078	assignedrole		Health Information Manager	5938	manager-healthinfo	13	NULL	NULL	1
 Medical Instructor	23079	assignedrole		Medical Assistant Instructor	3621	instructor-medical	2	NULL	NULL	5
 Medical Insurance	23080	rolemodifier			NULL		10000	NULL	NULL	2682
-Medical Insurance Coder	23081	assignedrole		Medical Coder	8905	specialist-medicalcoding	19	NULL	NULL	5
+Medical Insurance Coder	23081	assignedrole		Medical Coder	8905	specialist-medicalcoding	20	NULL	NULL	5
 Medical Insurance Coding	23082	rolemodifier			NULL		10000	NULL	NULL	6
 Medical Insurance Coding Jobs	23083	assignedrole			4619	jobs-medicalcoding	3	NULL	NULL	5
-Medical Insurance Coding Specialist	23084	assignedrole		Medical Coder	8905	specialist-medicalcoding	20	NULL	NULL	5
+Medical Insurance Coding Specialist	23084	assignedrole		Medical Coder	8905	specialist-medicalcoding	21	NULL	NULL	5
 Medical Insurance Jobs	23085	assignedrole			4415	jobs-healthinsurance	3	NULL	NULL	190
 Medical Interpreter	23086	assignedrole		Medical Interpreter	3803	interpreter-medical	1	NULL	NULL	1788
 Medical Investigator	23087	assignedrole		Clinical Investigator	3822	investigator-medical	2	NULL	NULL	11
@@ -21747,7 +21751,7 @@ Mounters	23940	rolekeyword		Mounter	NULL		10000	NULL	NULL	7
 Move	23941	rolemodifier			NULL		10000	NULL	NULL	16298
 Moveman	23943	assignedrole		Moveman	6801	moveman	1	NULL	NULL	3
 Movement	23944	rolemodifier			NULL		10000	NULL	NULL	3163
-Movement Therapist	23946	assignedrole		Recreational Therapist	9973	therapist-recreation	11	NULL	NULL	6
+Movement Therapist	23946	assignedrole		Recreational Therapist	9973	therapist-recreation	12	NULL	NULL	6
 Mover	23947	assignedrole		Mover	6802	mover	1	NULL	NULL	2160
 Mover Helper	23948	assignedrole		Mover Helper	6802	mover	3	NULL	NULL	22
 Movers	23949	assignedrole		Mover	6802	mover	2	NULL	NULL	1006
@@ -25324,9 +25328,9 @@ Pre Billing Specialist	27892	assignedrole		Pre Billing Specialist	9018	specialis
 Pre Certification Specialist	27893	assignedrole		Pre Certification Specialist	9019	specialist-precert	1	NULL	NULL	23
 Pre K	27895	rolemodifier			NULL		10000	NULL	NULL	6500
 Pre K Jobs	27896	assignedrole			4800	jobs-prek	1	NULL	NULL	674
-Pre K Teacher	27897	assignedrole		Pre K Teacher	9568	teacher-prek	1	NULL	NULL	679
+Pre K Teacher	27897	assignedrole		Preschool Teacher	9569	teacher-preschool	2	NULL	NULL	679
 Pre Kindergarten	27898	rolemodifier			NULL		10000	NULL	NULL	637
-Pre Kindergarten Teacher	27900	assignedrole		Preschool Teacher	9569	teacher-preschool	3	NULL	NULL	39
+Pre Kindergarten Teacher	27900	assignedrole		Preschool Teacher	9569	teacher-preschool	4	NULL	NULL	39
 Pre Press	27901	rolemodifier			NULL		10000	NULL	NULL	395
 Pre Press Jobs	27902	assignedrole			4801	jobs-prepress	2	NULL	NULL	92
 Pre Press Manager	27903	assignedrole		Pre Press Manager	6280	manager-prepress	1	NULL	NULL	7
@@ -25335,7 +25339,7 @@ Pre Registration Rep	27905	assignedrole		Intake Coordinator	1073	clerk-admit	37	
 Pre Registration Representative	27906	assignedrole		Intake Coordinator	1073	clerk-admit	40	NULL	NULL	8
 Pre School	27907	rolemodifier			NULL		10000	NULL	NULL	2131
 Pre School Jobs	27908	assignedrole			4802	jobs-preschool	2	NULL	NULL	244
-Pre School Teacher	27909	assignedrole		Preschool Teacher	9569	teacher-preschool	2	NULL	NULL	339
+Pre School Teacher	27909	assignedrole		Preschool Teacher	9569	teacher-preschool	3	NULL	NULL	339
 Preacher	27910	assignedrole		Preacher	7369	preacher	1	NULL	NULL	110
 Preanalytics Team Lead	27911	assignedrole		Preanalytics Team Lead	9017	specialist-preanalytic	1	NULL	NULL	1
 Preassembler	27912	rolekeyword			NULL		10000	NULL	NULL	1
@@ -25362,7 +25366,7 @@ Prefitter	27937	rolekeyword			NULL		10000	NULL	NULL	1
 Prefitters	27938	rolekeyword		Prefitter	NULL		10000	NULL	NULL	1
 Preflight	27939	rolemodifier			NULL		10000	NULL	NULL	54
 Prekindergarten	27941	rolemodifier			NULL		10000	NULL	NULL	505
-Prekindergarten Teacher	27943	assignedrole		Preschool Teacher	9569	teacher-preschool	5	NULL	NULL	30
+Prekindergarten Teacher	27943	assignedrole		Preschool Teacher	9569	teacher-preschool	6	NULL	NULL	30
 Prelude	27944	rolemodifier			NULL		10000	NULL	NULL	596
 Prenatal	27946	rolemodifier			NULL		10000	NULL	NULL	973
 Prenatal Nurse	27948	assignedrole		Prenatal Nurse	8031	rn-prenatal	1	NULL	NULL	24
@@ -25394,7 +25398,7 @@ Presales Manager	27976	assignedrole		Sales Manager	6412	manager-sale	21	NULL	NUL
 Presales Supervisor	27977	assignedrole		Sales Manager	6412	manager-sale	28	NULL	NULL	1
 Preschool	27978	rolemodifier			NULL		10000	NULL	NULL	56466
 Preschool Assistant	27979	assignedrole		Preschool Assistant	465	assistant-preschool	1	NULL	NULL	34
-Preschool Associate Teacher	27980	assignedrole		Preschool Teacher	9569	teacher-preschool	4	NULL	NULL	36
+Preschool Associate Teacher	27980	assignedrole		Preschool Teacher	9569	teacher-preschool	5	NULL	NULL	36
 Preschool Director	27981	assignedrole		Preschool Director	2378	director-preschool	1	NULL	NULL	26
 Preschool Jobs	27982	assignedrole			4802	jobs-preschool	1	NULL	NULL	10181
 Preschool Special Education	27983	rolemodifier			NULL		10000	NULL	NULL	36
@@ -25635,11 +25639,12 @@ Process Control Supervisor	28245	assignedrole		Process Control Supervisor	6291	m
 Process Control Technician	28246	assignedrole		Process Control Technician	9853	technician-processcontrol	1	NULL	NULL	36
 Process Controller	28247	assignedrole		Plant Controller	1580	controller-production	5	NULL	NULL	19
 Process Design	28248	rolemodifier			NULL		10000	NULL	NULL	940
-Process Design Consultant	28249	assignedrole		Process Designer	9026	specialist-processdesign	2	NULL	NULL	13
+Process Design Consultant	28249	assignedrole		Process Engineer	2982	engineer-process	11	NULL	NULL	13
 Process Design Engineer	28250	assignedrole		Process Engineer	2982	engineer-process	6	NULL	NULL	96
-Process Design Manager	28252	assignedrole		Process Design Manager	6292	manager-processdesign	1	NULL	NULL	13
-Process Design Supervisor	28253	assignedrole		Process Design Manager	6292	manager-processdesign	2	NULL	NULL	1
-Process Designer	28254	assignedrole		Process Designer	9026	specialist-processdesign	1	NULL	NULL	43
+Process Design Jobs	28251	assignedrole			4814	jobs-processengineering	2	NULL	NULL	116
+Process Design Manager	28252	assignedrole		Process Engineering Manager	6293	manager-processengineering	4	NULL	NULL	13
+Process Design Supervisor	28253	assignedrole		Process Engineering Manager	6293	manager-processengineering	5	NULL	NULL	1
+Process Designer	28254	assignedrole		Process Engineer	2982	engineer-process	8	NULL	NULL	43
 Process Development	28255	rolemodifier			NULL		10000	NULL	NULL	2785
 Process Development Associate	28256	assignedrole		Operations Analyst	221	analyst-operation	16	NULL	NULL	61
 Process Development Engineer	28257	assignedrole		Process Engineer	2982	engineer-process	3	NULL	NULL	558
@@ -25654,9 +25659,9 @@ Process Engineering Intern	28266	assignedrole		Process Engineering Intern	3756	i
 Process Engineering Internship	28267	assignedrole		Process Engineering Intern	3756	intern-processengineering	2	NULL	NULL	5
 Process Engineering Jobs	28268	assignedrole			4814	jobs-processengineering	1	NULL	NULL	1662
 Process Engineering Manager	28269	assignedrole		Process Engineering Manager	6293	manager-processengineering	1	NULL	NULL	67
-Process Engineering Specialist	28270	assignedrole		Process Engineering Specialist	9027	specialist-processengineering	1	NULL	NULL	23
+Process Engineering Specialist	28270	assignedrole		Process Engineer	2982	engineer-process	10	NULL	NULL	23
 Process Engineering Supervisor	28271	assignedrole		Process Engineering Manager	6293	manager-processengineering	3	NULL	NULL	17
-Process Engineering Technician	28272	assignedrole		Process Engineering Technician	9854	technician-processengineering	1	NULL	NULL	32
+Process Engineering Technician	28272	assignedrole		Process Engineer	2982	engineer-process	9	NULL	NULL	32
 Process Excellence	28273	rolemodifier			NULL		10000	NULL	NULL	269
 Process Excellence Consultant	28274	assignedrole		Business Process Analyst	9064	specialist-qualityimprovement	18	NULL	NULL	11
 Process Excellence Jobs	28275	assignedrole			4847	jobs-qualityimprovement	11	NULL	NULL	179
@@ -25964,7 +25969,7 @@ Professor Computer Science	28593	assignedrole		Professor Computer Science	7477	p
 Professor Criminal Justice	28594	assignedrole		Criminal Justice Instructor	7480	professor-criminaljustice	3	NULL	NULL	23
 Professor in Family Studies	28595	assignedrole		Professor in Family Studies	7516	professor-infamilystudy	1	NULL	NULL	2
 Professor of Anthropology	28596	assignedrole		Professor of Anthropology	7451	professor-anthropology	1	NULL	NULL	9
-Professor of Archaeology	28597	assignedrole		Archaeology Professor	7453	professor-archaeology	2	NULL	NULL	3
+Professor of Archaeology	28597	assignedrole		Archaeology Professor	7453	professor-archaeology	3	NULL	NULL	3
 Professor of Architecture	28598	assignedrole		Professor of Architecture	7454	professor-architecture	1	NULL	NULL	7
 Professor of Art	28599	assignedrole		Professor of Art	7455	professor-art	1	NULL	NULL	33
 Professor of Art History	28600	assignedrole		Professor of Art History	7456	professor-arthistory	1	NULL	NULL	20
@@ -26361,7 +26366,7 @@ Protozoologist	29019	assignedrole		Protozoologist	7609	protozoologist	1	NULL	NUL
 Prover	29020	assignedrole		Prover	7610	prover	1	NULL	NULL	24
 Provider	29021	rolekeyword			NULL		10000	NULL	NULL	148747
 Provider Caregiver	29022	rolekeyword			NULL		10000	NULL	NULL	1
-Provider Coder	29023	assignedrole		Medical Coder	8905	specialist-medicalcoding	23	NULL	NULL	1
+Provider Coder	29023	assignedrole		Medical Coder	8905	specialist-medicalcoding	24	NULL	NULL	1
 Provider Collaboration Engagement	29024	rolemodifier			NULL		10000	NULL	NULL	15
 Provider Collaboration Engagement Manager	29025	assignedrole		Provider Collaboration Engagement Manager	6320	manager-providerengagement	1	NULL	NULL	15
 Provider Collaboration Engagement Supervisor	29026	assignedrole		Provider Collaboration Engagement Manager	6320	manager-providerengagement	2	NULL	NULL	1
@@ -30768,7 +30773,7 @@ Slater	33804	assignedrole		Slater	8422	slater	1	NULL	NULL	100
 Slaughterer	33805	rolekeyword			NULL		10000	NULL	NULL	12
 Slaughterers	33806	rolekeyword		Slaughterer	NULL		10000	NULL	NULL	6
 SLD	33807	rolemodifier			NULL		10000	NULL	NULL	66
-SLD Teacher	33808	assignedrole		SLD Teacher	9592	teacher-sld	1	NULL	NULL	7
+SLD Teacher	33808	assignedrole		Special Education Teacher	9597	teacher-specialedu	4	NULL	NULL	7
 Sledger	33809	assignedrole		Sledger	8423	sledger	1	NULL	NULL	7
 Sleep	33810	rolemodifier			NULL		10000	NULL	NULL	55222
 Sleep Jobs	33811	assignedrole			4788	jobs-polysomnography	1	NULL	NULL	1711
@@ -31524,7 +31529,7 @@ SQL DBA	34656	assignedrole		SQL DBA	98	administrator-sqldatabase	1	NULL	NULL	265
 SQL Developer	34657	assignedrole		Database Developer	1876	developer-database	1	NULL	NULL	23431
 SQL Jobs	34658	assignedrole			5003	jobs-sql	1	NULL	NULL	46480
 SQL Manager	34659	assignedrole		Database Administrator	61	administrator-database	8	NULL	NULL	36
-SQL Report Analyst	34660	assignedrole		SQL Report Analyst	9148	specialist-sqlreporting	1	NULL	NULL	7
+SQL Report Analyst	34660	assignedrole		Data Reporting Analyst	175	analyst-datareporting	3	NULL	NULL	7
 SQL Server	34661	rolemodifier	Try SQL.		NULL		10000	NULL	NULL	44551
 SQL Server DBA	34662	assignedrole		SQL DBA	98	administrator-sqldatabase	2	NULL	NULL	176
 SQL Server Jobs	34663	assignedrole			5004	jobs-sqlserver	1	NULL	NULL	5357
@@ -33643,7 +33648,7 @@ Therapist Occupational	36977	assignedrole		Occupational Therapist	9966	therapist
 Therapist Phys	36978	assignedrole	Try Physical Therapist.	Physical Therapist	9969	therapist-physical	13	NULL	NULL	6
 Therapist Physical	36979	assignedrole		Physical Therapist	9969	therapist-physical	2	NULL	NULL	357
 Therapist Radiation	36980	assignedrole		Radiation Therapist	9972	therapist-radiation	4	NULL	NULL	9
-Therapist Recreation	36981	assignedrole		Recreational Therapist	9973	therapist-recreation	13	NULL	NULL	1
+Therapist Recreation	36981	assignedrole		Recreational Therapist	9973	therapist-recreation	14	NULL	NULL	1
 Therapist Respiratory	36982	assignedrole		Respiratory Therapist	9974	therapist-respiratory	11	NULL	NULL	156
 Therapist RRT	36983	assignedrole		Respiratory Therapist	9974	therapist-respiratory	10	NULL	NULL	168
 Therapist Speech	36984	assignedrole		Speech Language Pathologist	7163	pathologist-speechlanguage	14	NULL	NULL	96
@@ -34757,7 +34762,7 @@ Varitypists	38239	rolekeyword		Varitypist	NULL		10000	NULL	NULL	1
 Varnish	38240	rolemodifier			NULL		10000	NULL	NULL	110
 Varnisher	38242	assignedrole		Varnisher	10130	varnisher	1	NULL	NULL	5
 Varying Exceptionalities	38243	rolemodifier			NULL		10000	NULL	NULL	11
-Varying Exceptionalities Teacher	38244	assignedrole		Special Education Teacher	9597	teacher-specialedu	4	NULL	NULL	6
+Varying Exceptionalities Teacher	38244	assignedrole		Special Education Teacher	9597	teacher-specialedu	5	NULL	NULL	6
 Vasc	38245	rolemodifier	Try Vascular.	Vascular	NULL		10000	NULL	NULL	633
 Vasc Jobs	38246	assignedrole			5119	jobs-vascular	2	NULL	NULL	20
 Vasc Tech	38247	assignedrole		Vascular Technologist	9683	tech-vascular	6	NULL	NULL	4
