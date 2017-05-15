@@ -9,7 +9,7 @@ Changing permissions might make it easier for an attacker to exploit your system
 
 Second, the results are questionable when job titles overlap each other.  When I initially setup the synonyms file, I included synonyms for cyber security.  I found that a search for "security engineer" did not include some jobs that that used the phrase "info security engineer".
 
-## Demonstration
+## Demonstration: Implementing a Thesaurus at Index Time
 I assume you have Elasticsearch running on your local computer.
 
 ### Setup the synonyms file
@@ -85,11 +85,11 @@ My results looked like this:
     yellow open   jobs  hCU2hhdSR1GmFx61tiOZfw   5   1          0            0       591b           591b
 
 
-### Download jobfeed.json
+### Download jobfeed-example.json
 For the demonstration, download the jobfeed-example.json file.  I placed it into my user account's home directory.
 
 
-### Load jobfeed.json into Elasticsearch
+### Load jobfeed-example.json into Elasticsearch
 When I was testing a large file, I setup a shell script that would split the large file into smaller files and load them individually into Elasticsearch.
 
 I placed these lines into a jobfeed-example.sh:
@@ -121,8 +121,6 @@ I check if the jobs index contains any documents.
 
     curl -XGET 'localhost:9200/_cat/indices?v&pretty'
 
-
-
 ### Query the jobs index
 I search for database admin and get results with DBA and Database Administrator
 
@@ -141,5 +139,58 @@ I search for database admin and get results with DBA and Database Administrator
 If you changed the permissions on the /etc/elasticsearch directory, switch them back.
 
 
+## Demonstration: Implementing a Thesaurus at Query Time
+Instead of implementing a thesaurus at index time, you might want to use include synonyms at query time.
 
+### Check existing indexes
+Ask Elasticsearch if it currently has any indexes.
+
+    curl -XGET 'localhost:9200/_cat/indices?v&pretty'
+
+If you created a jobs index in the first demonstration, you will need to delete it to proceed. Proceed at your own risk.
+
+    curl -XDELETE 'localhost:9200/jobs?pretty'
+
+### Create a jobs index
+
+I send a request to Elasticsearch to create a jobs index.
+
+    curl -XPUT 'http://localhost:9200/jobs/?pretty' 
+
+### Check existing indexes
+Check if the jobs index was created successfully.
+
+    curl -XGET 'localhost:9200/_cat/indices?v&pretty'
+
+My results looked like this:
+
+    health status index uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+    yellow open   jobs  hCU2hhdSR1GmFx61tiOZfw   5   1          0            0       591b           591b
+
+### Load jobfeed-example.json into Elasticsearch
+
+I run the jobfeed-example.sh script from the first demonstration to load data into the jobs index:
+
+    ./jobfeed-example.sh
+
+I check if the jobs index contains any documents.
+
+    curl -XGET 'localhost:9200/_cat/indices?v&pretty'
+
+### Query the jobs index
+In this scenario, I write a query that includes each of synonym phrases.  As I understand it (I could be wrong), there are difficulties in trying to implement an multi-word search_analyzer without the analyzer also being used at index time.  This is a work-around where you would expand the query to search for synonyms.
+
+    curl -XGET 'localhost:9200/jobs/job/_search?pretty' -H 'Content-Type: application/json' -d'
+    {
+      "query": {
+        "bool": {
+          "should": [
+            { "match_phrase": { "job_title": "database administrator" } },
+            { "match_phrase": { "job_title": "dba" } }
+          ]
+        }
+       },
+       "size" : 25
+    }
+    '
 
