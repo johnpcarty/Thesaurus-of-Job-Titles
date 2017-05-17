@@ -7,7 +7,7 @@ The purpose of this section is to demonstrate how to include the thesaurus of jo
 I have not figured out how to setup the thesaurus without changing permissions on the Elasticsearch configuration directory.  
 Changing permissions might make it easier for an attacker to exploit your system.
 
-Second, the results are questionable when job titles overlap each other.  When I initially setup the synonyms file, I included synonyms for cyber security.  I found that a search for "security engineer" did not include some jobs that that used the phrase "info security engineer".
+Second, the results are questionable when job titles overlap each other.  When I initially setup the synonyms file, I included synonyms for cyber security.  I found that a search for "security engineer" did not include some jobs that that used the phrase "info security engineer".  I fixed some of the issues by removing phrases that are not job titles.  Another example of an overlap is for a "SQL DBA" and a "DBA."  I redesigned the synonyms text file so that when it indexes "SQL DBA", it will also add "DBA" to the index.
 
 ## Demonstration: Implementing a Thesaurus at Index Time
 I assume you have Elasticsearch running on your local computer.
@@ -135,7 +135,7 @@ I search for database admin and get results with DBA and Database Administrator
     }
     '
 
-When I ran it, the query returned 25 results.
+When I ran it, the query returned 35 results.
 
     {
       "took" : 8,
@@ -156,144 +156,5 @@ When I ran it, the query returned 25 results.
 
 ### Fix Permissions
 If you changed the permissions on the /etc/elasticsearch directory, switch them back.
-
-
-## Demonstration: Implementing a Thesaurus at Query Time
-Instead of implementing a thesaurus at index time, you might want to use include synonyms at query time.
-
-### Check existing indexes
-Ask Elasticsearch if it currently has any indexes.
-
-    curl -XGET 'localhost:9200/_cat/indices?v&pretty'
-
-If you created a jobs index in the first demonstration, you will need to delete it to proceed. Proceed at your own risk.
-
-    curl -XDELETE 'localhost:9200/jobs?pretty'
-
-### Create a jobs index
-
-I send a request to Elasticsearch to create a jobs index.
-
-    curl -XPUT 'http://localhost:9200/jobs/?pretty' 
-
-### Check existing indexes
-Check if the jobs index was created successfully.
-
-    curl -XGET 'localhost:9200/_cat/indices?v&pretty'
-
-My results looked like this:
-
-    health status index uuid                   pri rep docs.count docs.deleted store.size pri.store.size
-    yellow open   jobs  hCU2hhdSR1GmFx61tiOZfw   5   1          0            0       591b           591b
-
-### Load jobfeed-example.json into Elasticsearch
-
-I run the jobfeed-example.sh script from the first demonstration to load data into the jobs index:
-
-    ./jobfeed-example.sh
-
-I check if the jobs index contains any documents.
-
-    curl -XGET 'localhost:9200/_cat/indices?v&pretty'
-
-### Query the jobs index
-In this scenario, I write a query that includes each of synonym phrases.  As I understand it (I could be wrong), there are difficulties in trying to implement an multi-word search_analyzer without the analyzer also being used at index time.  This is a work-around where you would expand the query to search for synonyms.
-
-As a comparison, you could query each synonym separately.  First, query for database administrator:
-
-    curl -XGET 'localhost:9200/jobs/job/_search?pretty' -H 'Content-Type: application/json' -d'
-    {
-      "query": {
-           "match_phrase": { "job_title": "database administrator" } 
-       },
-       "size" : 0
-    }
-    '
-
-It returned 27 results.
-
-    {
-      "took" : 10,
-      "timed_out" : false,
-      "_shards" : {
-        "total" : 5,
-        "successful" : 5,
-        "failed" : 0
-      },
-      "hits" : {
-        "total" : 27,
-        "max_score" : 0.0,
-        "hits" : [ ]
-      }
-    }
-
-
-Second, query for dba:
-
-    curl -XGET 'localhost:9200/jobs/job/_search?pretty' -H 'Content-Type: application/json' -d'
-    {
-      "query": {
-           "match_phrase": { "job_title": "dba" } 
-       },
-       "size" : 0
-    }
-    '
-
-It returned 8 results.
-
-    {
-      "took" : 9,
-      "timed_out" : false,
-      "_shards" : {
-        "total" : 5,
-        "successful" : 5,
-        "failed" : 0
-      },
-      "hits" : {
-        "total" : 8,
-        "max_score" : 0.0,
-        "hits" : [ ]
-      }
-    }
-
-Alternatively, you can write one query that searches for each synonym.
-
-    curl -XGET 'localhost:9200/jobs/job/_search?pretty' -H 'Content-Type: application/json' -d'
-    {
-      "query": {
-        "bool": {
-          "should": [
-            { "match_phrase": { "job_title": "database administrator" } },
-            { "match_phrase": { "job_title": "dba" } }
-          ]
-        }
-       },
-       "size" : 0
-    }
-    '
-
-It returned 35 results.
-
-    {
-      "took" : 19,
-      "timed_out" : false,
-      "_shards" : {
-        "total" : 5,
-        "successful" : 5,
-        "failed" : 0
-      },
-      "hits" : {
-        "total" : 35,
-        "max_score" : 0.0,
-        "hits" : [ ]
-      }
-    }
-
-## Different Results of the Two Demonstrations
-
-The first demonstration, which used the synonyms to index the data, returned 25 results.  The second demonstration, which used synonyms at query time, returned 35 results.  I believe the first method did not include all database administrators because of overlap with other synonyms.  In my thesaurus, I include the phrase "SQL DBA" as a detailed occupation.  When the jobs are indexed using synonyms, the "SQL DBA" jobs get indexed under SQL DBA, but not DBA.  When a user searches for DBA jobs, the SQL DBA jobs are not returned.  Therefore, if you want to deliver the most results, you might want to include synonyms in your query instead of at index time.
-
-
-
 
 
