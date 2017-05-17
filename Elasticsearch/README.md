@@ -13,12 +13,14 @@ Second, the results are questionable when job titles overlap each other.  When I
 I assume you have Elasticsearch running on your local computer.
 
 ### Setup the synonyms file
-Download the synonym-job-titles.txt from the Thesaurus-of-Job-Titles and save it in the $ES_HOME directory (/etc/elasticsearch).
+Download the synonym_job_titles_for_index.txt and synonym_job_titles_for_search.txt files from the Thesaurus-of-Job-Titles and save them in the $ES_HOME directory (/etc/elasticsearch).
 
-I update the permissions the synonyms text file:
+I update the permissions the synonyms text files:
 
-    sudo chown root:elasticsearch synonym_job_titles.txt
-    sudo chmod 664 synonym_job_titles.txt
+    sudo chown root:elasticsearch synonym_job_titles_for_index.txt
+    sudo chmod 664 synonym_job_titles_for_index.txt
+    sudo chown root:elasticsearch synonym_job_titles_for_search.txt
+    sudo chmod 664 synonym_job_titles_for_search.txt
 
 
 ### Check existing indexes
@@ -40,18 +42,32 @@ It contains mappings for a type called job that contains a field called job_titl
        "settings" : {
           "analysis" : {
              "filter" : {
-                "my_job_title_filter" : {
+                "my_job_title_filter_for_index" : {
                    "type" : "synonym",
-                   "synonyms_path" : "synonym_job_titles.txt"
+                   "synonyms_path" : "synonym_job_titles_for_index.txt"
+                },
+                "my_job_title_filter_for_search" : {
+                   "type" : "synonym",
+                   "synonyms_path" : "synonym_job_titles_for_search.txt"
                 }
              },
              "analyzer" : {
-                "my_job_title_analyzer" : {
+                "my_job_title_analyzer_for_index" : {
                    "filter" : [
                       "standard",
                       "lowercase",
                       "stop",
-                      "my_job_title_filter"
+                      "my_job_title_filter_for_index"
+                   ],
+                   "type" : "custom",
+                   "tokenizer" : "standard"
+                },
+                "my_job_title_analyzer_for_search" : {
+                   "filter" : [
+                      "standard",
+                      "lowercase",
+                      "stop",
+                      "my_job_title_filter_for_search"
                    ],
                    "type" : "custom",
                    "tokenizer" : "standard"
@@ -64,7 +80,8 @@ It contains mappings for a type called job that contains a field called job_titl
              "properties" : {
                 "job_title" : {
                    "type" : "text",
-                   "analyzer" : "my_job_title_analyzer"
+                   "analyzer" : "my_job_title_analyzer_for_index",
+                   "search_analyzer" : "my_job_title_analyzer_for_search"
                 }
              }
           }
@@ -151,6 +168,19 @@ When I ran it, the query returned 35 results.
         "hits" : [ ]
       }
     }
+
+I search for SQL DBA and only get the SQL DBA results.
+
+    curl -XGET 'http://localhost:9200/jobs/job/_search?pretty' -H 'Content-Type: application/json' -d '
+    {
+       "query" : {
+          "match_phrase" : {
+             "job_title" : "sql dba"
+          }
+       },
+       "size" : 0
+    }
+    '
 
 
 
