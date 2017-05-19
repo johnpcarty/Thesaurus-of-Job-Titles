@@ -1,6 +1,8 @@
 # Thesaurus of Job Titles
 An open source thesaurus of job titles in US English
 
+This thesaurus is not perfect, but I hope it is a good start.
+
 There is a disconnect between how people search for jobs and how those jobs are posted.  People search for internships, but jobs are posted for interns.  This is the synonym problem.  It has a solution - a thesaurus.
 
 ### For Job Seekers and Recruiters
