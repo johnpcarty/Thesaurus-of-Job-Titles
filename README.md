@@ -14,7 +14,8 @@ If you are here for the data, the files you are probably looking for are the ass
 
 ### For Developers, ATS's and Search Engines
 For search engines, I built a synonyms file for Elasticsearch. Check the Elasticsearch folder for a demonstration.
-- synonym_job_titles.txt - a file that contains job title synonyms in a Solr format.
+- synonym_job_titles_for_index.txt - a file that should be used when indexing job titles in Elasticsearch in the Solr format.
+- synonym_job_titles_for_search.txt - a file that should be used to run a search against the index in Elasticsearch in the Solr format.
 
 Under the Developers folder, I publish the thesaurus as a database in a MySql format.
 
