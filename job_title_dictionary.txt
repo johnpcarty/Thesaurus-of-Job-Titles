@@ -3829,7 +3829,7 @@ Care Management Specialist	4288	assignedrole		Case Manager	5565	manager-case	12	
 Care Management Supervisor	4289	assignedrole		Manager Case Management	5566	manager-casemanagement	7	NULL	NULL	4
 Care Manager	4290	assignedrole		Care Manager	5558	manager-care	1	NULL	NULL	33906
 Care Manager LPN	4291	assignedrole		Care Manager LPN	5351	lpn	12	NULL	NULL	5
-Care Manager RN	4292	assignedrole		Care Manager RN	8113	rnrnmanager-care	1	NULL	NULL	68
+Care Manager RN	4292	assignedrole		RN Care Manager	7874	rn-carecoordinator	6	NULL	NULL	68
 Care Managers	4293	assignedrole		Care Manager	5558	manager-care	4	NULL	NULL	76
 Care Mgmt	4294	rolemodifier			NULL		10000	NULL	NULL	16
 Care Mgmt Jobs	4295	assignedrole			4039	jobs-casemanagement	3	NULL	NULL	16
@@ -4242,8 +4242,8 @@ Cert Med Jobs	4756	assignedrole			4613	jobs-medical	9	NULL	NULL	3
 Cert Medical	4757	rolemodifier			NULL		10000	NULL	NULL	20
 Cert Medical Assistant	4758	assignedrole		Cert Medical Assistant	431	assistant-medical	14	NULL	NULL	20
 Cert Medical Jobs	4759	assignedrole			4613	jobs-medical	8	NULL	NULL	6
-Cert Na	4760	assignedrole		Certified Nursing Assistant	363	assistant-certnursing	38	NULL	NULL	1
-Cert Nurs Asst	4761	assignedrole		Certified Nursing Assistant	363	assistant-certnursing	36	NULL	NULL	5
+Cert Na	4760	assignedrole		Certified Nursing Assistant	363	assistant-certnursing	39	NULL	NULL	1
+Cert Nurs Asst	4761	assignedrole		Certified Nursing Assistant	363	assistant-certnursing	37	NULL	NULL	5
 Cert Nursing	4762	rolemodifier			NULL		10000	NULL	NULL	20
 Cert Nursing Assistant	4763	assignedrole		Certified Nursing Assistant	363	assistant-certnursing	32	NULL	NULL	23
 Cert Nursing Asst	4764	assignedrole		Certified Nursing Assistant	363	assistant-certnursing	34	NULL	NULL	9
@@ -5255,8 +5255,8 @@ Clinic Nurse RN	5899	assignedrole		Clinical Nurse	7881	rn-clinical	12	NULL	NULL	
 Clinic Office Assistant	5900	assignedrole		Clinic Office Assistant	371	assistant-clinicaloffice	1	NULL	NULL	83
 Clinic Office Coordinator	5901	assignedrole		Clinic Office Coordinator	1111	clerk-clinicaloffice	1	NULL	NULL	13
 Clinic Operations	5902	rolemodifier			NULL		10000	NULL	NULL	170
-Clinic Operations Manager	5903	assignedrole		Clinical Operations Manager	5612	manager-clinicaloperation	2	NULL	NULL	17
-Clinic Operations Supervisor	5904	assignedrole		Clinical Operations Manager	5612	manager-clinicaloperation	3	NULL	NULL	2
+Clinic Operations Manager	5903	assignedrole		Clinical Operations Manager	5612	manager-clinicaloperation	3	NULL	NULL	17
+Clinic Operations Supervisor	5904	assignedrole		Clinical Operations Manager	5612	manager-clinicaloperation	4	NULL	NULL	2
 Clinic Receptionist	5905	assignedrole		Medical Receptionist	7713	receptionist-medical	3	NULL	NULL	295
 Clinic Registered Nurse	5906	assignedrole		Clinical Nurse	7881	rn-clinical	11	NULL	NULL	50
 Clinic Scheduler	5907	assignedrole		Surgery Scheduler	8193	scheduler-medical	6	NULL	NULL	7
@@ -5460,10 +5460,10 @@ Clinical Ob Gyn	6111	assignedrole		Clinical Ob Gyn	6901	obgyn	15	NULL	NULL	3
 Clinical Office Assistant	6112	assignedrole		Clinic Office Assistant	371	assistant-clinicaloffice	2	NULL	NULL	5
 Clinical Operations	6113	rolemodifier			NULL		10000	NULL	NULL	4087
 Clinical Operations Consultant	6114	assignedrole		Clinical Operations Consultant	8605	specialist-clinicaloperation	1	NULL	NULL	36
-Clinical Operations Leader	6115	assignedrole		Clinical Operations Leader	5241	leader-clinicaloperation	1	NULL	NULL	33
+Clinical Operations Leader	6115	assignedrole		Clinical Operations Manager	5612	manager-clinicaloperation	2	NULL	NULL	33
 Clinical Operations Manager	6116	assignedrole		Clinical Operations Manager	5612	manager-clinicaloperation	1	NULL	NULL	792
 Clinical Operations Specialist	6117	assignedrole		Clinical Operations Consultant	8605	specialist-clinicaloperation	2	NULL	NULL	17
-Clinical Operations Supervisor	6118	assignedrole		Clinical Operations Manager	5612	manager-clinicaloperation	4	NULL	NULL	1
+Clinical Operations Supervisor	6118	assignedrole		Clinical Operations Manager	5612	manager-clinicaloperation	5	NULL	NULL	1
 Clinical Partner	6119	assignedrole		Clinical Partner	7148	partner-clinical	1	NULL	NULL	275
 Clinical Pathologist	6120	assignedrole		Clinical Pathologist	7158	pathologist-medical	1	NULL	NULL	81
 Clinical Patient	6121	rolemodifier			NULL		10000	NULL	NULL	33
@@ -5495,9 +5495,9 @@ Clinical Program Supervisor	6147	assignedrole		Clinical Program Manager	5615	man
 Clinical Programmer	6148	assignedrole		Software Engineer	3026	engineer-software	31	NULL	NULL	173
 Clinical Project	6149	rolemodifier			NULL		10000	NULL	NULL	202
 Clinical Project Assistant	6150	assignedrole		Clinical Project Assistant	372	assistant-clinicalproject	1	NULL	NULL	33
-Clinical Project Leader	6152	assignedrole		Clinical Project Leader	5242	leader-clinicalproject	1	NULL	NULL	13
+Clinical Project Leader	6152	assignedrole		Clinical Project Manager	5616	manager-clinicalproject	2	NULL	NULL	13
 Clinical Project Manager	6153	assignedrole		Clinical Project Manager	5616	manager-clinicalproject	1	NULL	NULL	405
-Clinical Project Supervisor	6154	assignedrole		Clinical Project Manager	5616	manager-clinicalproject	2	NULL	NULL	1
+Clinical Project Supervisor	6154	assignedrole		Clinical Project Manager	5616	manager-clinicalproject	3	NULL	NULL	1
 Clinical Project Support	6155	rolemodifier			NULL		10000	NULL	NULL	8
 Clinical Psychiatrist	6157	assignedrole		Clinical Psychiatrist	7620	psychiatrist-clinical	1	NULL	NULL	48
 Clinical Psychologist	6158	assignedrole		Clinical Psychologist	7627	psychologist-clinical	1	NULL	NULL	10362
@@ -6515,12 +6515,12 @@ Construction Mgr	7293	assignedrole		Construction Manager	5664	manager-constructi
 Construction Person	7294	assignedrole		Construction Person	7191	person-construction	1	NULL	NULL	3
 Construction Producer	7295	assignedrole		Construction Producer	7432	producer-construction	1	NULL	NULL	6
 Construction Project	7296	rolemodifier			NULL		10000	NULL	NULL	3070
-Construction Project Administrator	7297	assignedrole		Construction Project Administrator	59	administrator-constructionproject	1	NULL	NULL	22
-Construction Project Director	7298	assignedrole		Construction Project Director	2060	director-constructionproject	1	NULL	NULL	7
+Construction Project Administrator	7297	assignedrole		Construction Manager	5664	manager-construction	10	NULL	NULL	22
+Construction Project Director	7298	assignedrole		Construction Manager	5664	manager-construction	12	NULL	NULL	7
 Construction Project Engineer	7299	assignedrole		Construction Project Engineer	2848	engineer-constructionproject	1	NULL	NULL	144
 Construction Project Manager	7301	assignedrole		Construction Manager	5664	manager-construction	2	NULL	NULL	4040
 Construction Project Mgr	7302	assignedrole		Construction Manager	5664	manager-construction	7	NULL	NULL	116
-Construction Project Supervisor	7303	assignedrole		Construction Manager	5664	manager-construction	11	NULL	NULL	7
+Construction Project Supervisor	7303	assignedrole		Construction Manager	5664	manager-construction	13	NULL	NULL	7
 Construction Rep	7304	assignedrole		Construction Specialist	8634	specialist-construction	4	NULL	NULL	23
 Construction Representative	7305	assignedrole		Construction Specialist	8634	specialist-construction	2	NULL	NULL	87
 Construction Sales	7306	rolemodifier			NULL		10000	NULL	NULL	60
@@ -7718,10 +7718,10 @@ Data Conversion	8644	rolemodifier			NULL		10000	NULL	NULL	1519
 Data Conversion Operator	8646	assignedrole		Data Conversion Operator	7025	operator-dataconversion	1	NULL	NULL	14
 Data Coord	8647	assignedrole		Data Coordinator	1137	clerk-data	7	NULL	NULL	8
 Data Coordinator	8648	assignedrole		Data Coordinator	1137	clerk-data	1	NULL	NULL	1007
-Data Designer	8649	assignedrole		Database Developer	1876	developer-database	9	NULL	NULL	55
-Data Developer	8650	assignedrole		Database Developer	1876	developer-database	7	NULL	NULL	179
+Data Designer	8649	assignedrole		Database Developer	1876	developer-database	8	NULL	NULL	55
+Data Developer	8650	assignedrole		Database Developer	1876	developer-database	6	NULL	NULL	179
 Data Director	8651	assignedrole		Director Data	2088	director-data	2	NULL	NULL	60
-Data Engineer	8652	assignedrole		Database Developer	1876	developer-database	3	NULL	NULL	3817
+Data Engineer	8652	assignedrole		Database Developer	1876	developer-database	2	NULL	NULL	3817
 Data Entry	8653	rolemodifier			NULL		10000	NULL	NULL	12511
 Data Entry Analyst	8654	assignedrole		Data Entry Clerk	8660	specialist-dataentry	5	NULL	NULL	57
 Data Entry Assistant	8655	assignedrole		Data Entry Clerk	8660	specialist-dataentry	4	NULL	NULL	58
@@ -7756,7 +7756,7 @@ Data Mgmt	8684	rolemodifier	Try Data Management.	Data Management	NULL		10000	NUL
 Data Migration	8686	rolemodifier			NULL		10000	NULL	NULL	1003
 Data Migration Lead	8687	assignedrole		Data Migration Lead	8662	specialist-datamigration	1	NULL	NULL	23
 Data Mining Analyst	8688	assignedrole		Data Mining Analyst	8663	specialist-datamining	1	NULL	NULL	56
-Data Modeler	8689	assignedrole		Database Developer	1876	developer-database	5	NULL	NULL	3005
+Data Modeler	8689	assignedrole		Database Developer	1876	developer-database	4	NULL	NULL	3005
 Data Operations	8690	rolemodifier			NULL		10000	NULL	NULL	160
 Data Operations Jobs	8691	assignedrole			4180	jobs-dataprocessing	2	NULL	NULL	119
 Data Operations Leader	8692	assignedrole		Data Operations Manager	5717	manager-dataprocessing	3	NULL	NULL	6
@@ -7769,7 +7769,7 @@ Data Processing Jobs	8698	assignedrole			4180	jobs-dataprocessing	1	NULL	NULL	35
 Data Processing Manager	8699	assignedrole		Data Operations Manager	5717	manager-dataprocessing	2	NULL	NULL	26
 Data Processing Supervisor	8700	assignedrole		Data Operations Manager	5717	manager-dataprocessing	4	NULL	NULL	3
 Data Processor	8701	assignedrole		Data Processor	7409	processor-data	1	NULL	NULL	242
-Data Programmer	8702	assignedrole		Database Developer	1876	developer-database	8	NULL	NULL	56
+Data Programmer	8702	assignedrole		Database Developer	1876	developer-database	7	NULL	NULL	56
 Data Reporting	8703	rolemodifier			NULL		10000	NULL	NULL	575
 Data Reporting Analyst	8704	assignedrole		Data Reporting Analyst	175	analyst-datareporting	1	NULL	NULL	312
 Data Review Specialist	8705	assignedrole		Data Review Specialist	8664	specialist-datareview	1	NULL	NULL	10
@@ -7777,7 +7777,7 @@ Data Reviewer	8706	assignedrole		Data Analyst	173	analyst-data	12	NULL	NULL	36
 Data Science	8707	rolemodifier			NULL		10000	NULL	NULL	6083
 Data Scientist	8708	assignedrole		Data Scientist	8208	scientist-data	1	NULL	NULL	42573
 Data Security	8709	rolemodifier			NULL		10000	NULL	NULL	2597
-Data Security Administrator	8710	assignedrole		Data Security Administrator	94	administrator-security	3	NULL	NULL	13
+Data Security Administrator	8710	assignedrole		Data Security Administrator	94	administrator-security	4	NULL	NULL	13
 Data Security Analyst	8711	assignedrole		Information Security Analyst	209	analyst-itsecurity	12	NULL	NULL	147
 Data Security Engineer	8712	assignedrole		Data Security Engineer	2929	engineer-itsecurity	11	NULL	NULL	13
 Data Security Jobs	8713	assignedrole			4508	jobs-itsecurity	8	NULL	NULL	339
@@ -7826,21 +7826,21 @@ Database Architect	8756	assignedrole		Data Architect	281	architect-data	3	NULL	N
 Database Consultant	8757	assignedrole		Database Analyst	174	analyst-database	4	NULL	NULL	93
 Database Coordinator	8758	assignedrole		Database Analyst	174	analyst-database	6	NULL	NULL	51
 Database DBA	8759	assignedrole		Database Administrator	61	administrator-database	6	NULL	NULL	93
-Database Designer	8760	assignedrole		Database Developer	1876	developer-database	10	NULL	NULL	48
-Database Developer	8761	assignedrole		Database Developer	1876	developer-database	2	NULL	NULL	6901
-Database Engineer	8762	assignedrole		Database Developer	1876	developer-database	4	NULL	NULL	3086
+Database Designer	8760	assignedrole		Database Developer	1876	developer-database	9	NULL	NULL	48
+Database Developer	8761	assignedrole		Database Developer	1876	developer-database	1	NULL	NULL	6901
+Database Engineer	8762	assignedrole		Database Developer	1876	developer-database	3	NULL	NULL	3086
 Database Jobs	8763	assignedrole			4178	jobs-database	1	NULL	NULL	62440
 Database Manager	8764	assignedrole		Database Administrator	61	administrator-database	3	NULL	NULL	570
 Database Marketing	8765	rolemodifier			NULL		10000	NULL	NULL	886
 Database Marketing Analyst	8766	assignedrole		Database Marketing Analyst	8659	specialist-databasemarketing	1	NULL	NULL	84
-Database Modeler	8768	assignedrole		Database Developer	1876	developer-database	11	NULL	NULL	32
-Database Programmer	8769	assignedrole		Database Developer	1876	developer-database	6	NULL	NULL	349
+Database Modeler	8768	assignedrole		Database Developer	1876	developer-database	10	NULL	NULL	32
+Database Programmer	8769	assignedrole		Database Developer	1876	developer-database	5	NULL	NULL	349
 Database Security	8770	rolemodifier			NULL		10000	NULL	NULL	297
-Database Security Administrator	8771	assignedrole		Database Security Administrator	94	administrator-security	4	NULL	NULL	3
+Database Security Administrator	8771	assignedrole		Database Security Administrator	94	administrator-security	5	NULL	NULL	3
 Database Security Expert	8772	assignedrole		Information Security Analyst	209	analyst-itsecurity	33	NULL	NULL	3
 Database Security Jobs	8773	assignedrole			4508	jobs-itsecurity	13	NULL	NULL	33
 Database Specialist	8774	assignedrole		Database Analyst	174	analyst-database	2	NULL	NULL	653
-Database Supervisor	8775	assignedrole		Database Administrator	61	administrator-database	12	NULL	NULL	7
+Database Supervisor	8775	assignedrole		Database Administrator	61	administrator-database	10	NULL	NULL	7
 Database Support	8776	rolemodifier			NULL		10000	NULL	NULL	32
 Database Support Jobs	8777	assignedrole			4178	jobs-database	4	NULL	NULL	33
 Database Technician	8778	assignedrole		Database Analyst	174	analyst-database	9	NULL	NULL	19
@@ -7885,7 +7885,7 @@ DB2 DBA	8817	assignedrole		DB2 DBA	62	administrator-db2database	1	NULL	NULL	124
 DBA	8819	assignedrole		Database Administrator	61	administrator-database	1	NULL	NULL	223156
 DBA Manager	8820	assignedrole		DBA Manager	5714	manager-databaseadministration	1	NULL	NULL	57
 DBA Supervisor	8821	assignedrole		DBA Manager	5714	manager-databaseadministration	4	NULL	NULL	1
-DBAs	8822	assignedrole		Database Administrator	61	administrator-database	10	NULL	NULL	20
+DBAs	8822	assignedrole		Database Administrator	61	administrator-database	9	NULL	NULL	20
 De	8823	rolemodifier			NULL		10000	NULL	NULL	406
 de Cuisine	8824	rolemodifier			NULL		10000	NULL	NULL	323
 De Icer	8826	rolemodifier			3538	icer	10000	NULL	NULL	36
@@ -9087,10 +9087,10 @@ Director Industrial	10085	assignedrole		Director Industrial	2217	director-indust
 Director Industrial Relations	10086	assignedrole		Labor Relations Director	2247	director-laborrelation	9	NULL	NULL	3
 Director Infection Control	10087	assignedrole		Director of Infection Control	2218	director-infectioncontrol	3	NULL	NULL	4
 Director Infection Prevention	10088	assignedrole		Director of Infection Control	2218	director-infectioncontrol	4	NULL	NULL	4
-Director Info	10089	assignedrole		Director Information	2219	director-information	4	NULL	NULL	19
+Director Info	10089	assignedrole		Director Information	2219	director-information	5	NULL	NULL	19
 Director Informatics	10090	assignedrole		Director Informatics	2033	director-clinicalinformatic	1	NULL	NULL	60
 Director Information	10091	assignedrole		Director Information	2219	director-information	1	NULL	NULL	321
-Director Information Management	10092	assignedrole		Information Management Director	2220	director-informationmanagement	2	NULL	NULL	5
+Director Information Management	10092	assignedrole		Director Information Management	2219	director-information	6	NULL	NULL	5
 Director Information Security	10093	assignedrole		Director Information Security	2242	director-itsecurity	1	NULL	NULL	90
 Director Information Systems	10094	assignedrole		Director Software Development	2467	director-softwareengineering	7	NULL	NULL	69
 Director Information Technology	10095	assignedrole		Director IT	2221	director-infotech	6	NULL	NULL	348
@@ -9624,7 +9624,7 @@ Director of Infection Control	10622	assignedrole		Director of Infection Control	
 Director of Infection Prevention	10623	assignedrole		Director of Infection Control	2218	director-infectioncontrol	5	NULL	NULL	3
 Director of Informatics	10624	assignedrole		Director Informatics	2033	director-clinicalinformatic	7	NULL	NULL	6
 Director of Information	10625	assignedrole		Director Information	2219	director-information	2	NULL	NULL	156
-Director of Information Management	10626	assignedrole		Information Management Director	2220	director-informationmanagement	3	NULL	NULL	5
+Director of Information Management	10626	assignedrole		Director Information	2219	director-information	7	NULL	NULL	5
 Director of Information Security	10627	assignedrole		Director Information Security	2242	director-itsecurity	2	NULL	NULL	64
 Director of Information Systems	10628	assignedrole		Director Software Development	2467	director-softwareengineering	6	NULL	NULL	86
 Director of Information Technology	10629	assignedrole		Director IT	2221	director-infotech	8	NULL	NULL	297
@@ -16575,7 +16575,7 @@ Information Consultant	18288	assignedrole		Information Analyst	8825	specialist-i
 Information Coordinator	18289	assignedrole		Data Coordinator	1137	clerk-data	2	NULL	NULL	124
 Information Delivery Analyst	18290	assignedrole		Information Delivery Analyst	8826	specialist-informationdelivery	1	NULL	NULL	5
 Information Developer	18291	assignedrole		Information Analyst	8825	specialist-information	6	NULL	NULL	164
-Information Director	18292	assignedrole		Director Information	2219	director-information	3	NULL	NULL	20
+Information Director	18292	assignedrole		Director Information	2219	director-information	4	NULL	NULL	20
 Information Engineer	18293	assignedrole		Information Engineer	2920	engineer-information	1	NULL	NULL	160
 Information Jobs	18294	assignedrole			4477	jobs-information	1	NULL	NULL	39878
 Information Lead	18295	assignedrole		Information Analyst	8825	specialist-information	11	NULL	NULL	20
@@ -16583,7 +16583,7 @@ Information Management	18296	rolemodifier			NULL		10000	NULL	NULL	7541
 Information Management Analyst	18297	assignedrole		Information Management Specialist	8827	specialist-informationmanagement	2	NULL	NULL	46
 Information Management Consultant	18298	assignedrole		Information Management Specialist	8827	specialist-informationmanagement	3	NULL	NULL	23
 Information Management Coordinator	18299	assignedrole		Data Coordinator	1137	clerk-data	6	NULL	NULL	13
-Information Management Director	18300	assignedrole		Information Management Director	2220	director-informationmanagement	1	NULL	NULL	27
+Information Management Director	18300	assignedrole		Director Information	2219	director-information	3	NULL	NULL	27
 Information Management Manager	18302	assignedrole		Manager Information	5997	manager-information	4	NULL	NULL	33
 Information Management Officer	18303	assignedrole		Information Management Officer	6973	officer-informationmanagement	1	NULL	NULL	25
 Information Management Specialist	18304	assignedrole		Information Management Specialist	8827	specialist-informationmanagement	1	NULL	NULL	107
@@ -19784,7 +19784,7 @@ Manager of Clinical	21798	assignedrole		Clinical Manager	5601	manager-clinical	1
 Manager of Community Relations	21799	assignedrole		Public Relations Manager	6328	manager-publicrelation	15	NULL	NULL	7
 Manager of Compensation	21800	assignedrole		Benefits Manager	5650	manager-compensation	10	NULL	NULL	6
 Manager of Compliance	21801	assignedrole		Compliance Manager	5656	manager-compliance	5	NULL	NULL	13
-Manager of Construction	21802	assignedrole		Construction Manager	5664	manager-construction	10	NULL	NULL	10
+Manager of Construction	21802	assignedrole		Construction Manager	5664	manager-construction	11	NULL	NULL	10
 Manager of Corporate	21803	assignedrole		Manager Enterprise	5678	manager-corporate	6	NULL	NULL	11
 Manager of Corporate Communications	21804	assignedrole		Corporate Communications Manager	5679	manager-corporatecommunication	3	NULL	NULL	10
 Manager of Creative Services	21805	assignedrole		Creative Manager	5694	manager-creative	5	NULL	NULL	10
@@ -20111,7 +20111,7 @@ Manager Specialty	22125	assignedrole		Manager Specialty	6479	manager-specialty	1
 Manager Speech	22126	assignedrole		Supervisor Speech	6481	manager-speech	2	NULL	NULL	10
 Manager Sports	22127	assignedrole		Manager Sports	6484	manager-sport	1	NULL	NULL	40
 Manager Spring	22128	assignedrole		Manager Spring	6485	manager-spring	1	NULL	NULL	8
-Manager SQL	22129	assignedrole		Database Administrator	61	administrator-database	11	NULL	NULL	17
+Manager SQL	22129	assignedrole		SQL DBA	98	administrator-sqldatabase	5	NULL	NULL	17
 Manager Staffing	22130	assignedrole		Staffing Manager	6486	manager-staffing	3	NULL	NULL	30
 Manager Star	22131	assignedrole		Manager STARS	6489	manager-star	2	NULL	NULL	10
 Manager STARS	22132	assignedrole		Manager STARS	6489	manager-star	1	NULL	NULL	17
@@ -20659,7 +20659,7 @@ Materials Specialist	22712	assignedrole		Material Specialist	8894	specialist-mat
 Materials Supervisor	22713	assignedrole		Materials Manager	6099	manager-material	3	NULL	NULL	69
 Materials Tech	22714	assignedrole		Materials Technician	9816	technician-material	3	NULL	NULL	10
 Materials Technician	22715	assignedrole		Materials Technician	9816	technician-material	1	NULL	NULL	139
-Materiel Coord	22716	assignedrole		Materiel Coord	1230	clerk-materiel	1	NULL	NULL	1
+Materiel Coord	22716	assignedrole		Materials Coordinator	1229	clerk-material	7	NULL	NULL	1
 Maternal Child	22717	rolemodifier			NULL		10000	NULL	NULL	443
 Maternal Child Nurse	22719	assignedrole		Registered Nurse Maternal Child	7971	rn-maternalchild	3	NULL	NULL	5
 Maternity	22720	rolemodifier			NULL		10000	NULL	NULL	10132
@@ -22332,7 +22332,7 @@ Numerologist	24596	assignedrole		Numerologist	6859	numerologist	1	NULL	NULL	32
 Numismatist	24597	assignedrole		Numismatist	6860	numismatist	1	NULL	NULL	60
 Nun	24598	rolekeyword			NULL		10000	NULL	NULL	165
 Nuns	24599	rolekeyword		Nun	NULL		10000	NULL	NULL	100
-Nurs Asst	24600	assignedrole		Nurs Asst	437	assistant-nurs	1	NULL	NULL	5
+Nurs Asst	24600	assignedrole		Certified Nursing Assistant	363	assistant-certnursing	36	NULL	NULL	5
 Nurse	24601	rolekeyword	System did not recognize type of Nurse.		NULL		10000	NULL	NULL	6591495
 Nurse Administrator	24602	assignedrole		Nurse Administrator	8104	rnrnadministrator	1	NULL	NULL	241
 Nurse Advisor	24603	assignedrole		Nurse Advisor	7852	rn-advisor	1	NULL	NULL	11
@@ -22349,7 +22349,7 @@ Nurse Auditor	24613	assignedrole		Nurse Auditor	7857	rn-auditor	1	NULL	NULL	288
 Nurse Care	24614	rolemodifier			7874	rn-carecoordinator	10000	NULL	NULL	2063
 Nurse Care Coordinator	24615	assignedrole		RN Care Manager	7874	rn-carecoordinator	5	NULL	NULL	128
 Nurse Care Manager	24616	assignedrole		RN Care Manager	7874	rn-carecoordinator	3	NULL	NULL	391
-Nurse Care Supervisor	24617	assignedrole		RN Care Manager	7874	rn-carecoordinator	10	NULL	NULL	1
+Nurse Care Supervisor	24617	assignedrole		RN Care Manager	7874	rn-carecoordinator	11	NULL	NULL	1
 Nurse Case Management	24618	assignedrole		RN Case Manager	6173	manager-nursecase	6	NULL	NULL	142
 Nurse Case Manager	24619	assignedrole		RN Case Manager	6173	manager-nursecase	2	NULL	NULL	7035
 Nurse Case Supervisor	24620	assignedrole		RN Case Manager	6173	manager-nursecase	23	NULL	NULL	1
@@ -22357,7 +22357,7 @@ Nurse Charge RN	24621	assignedrole		Charge Nurse	7877	rn-charge	6	NULL	NULL	179
 Nurse Chemical Dependency	24622	assignedrole		Addiction Nurse	7898	rn-dependency	5	NULL	NULL	6
 Nurse Circulator	24623	assignedrole		Nurse Circulator	1045	circulator	4	NULL	NULL	23
 Nurse Clinical	24624	assignedrole		Clinical Nurse	7881	rn-clinical	5	NULL	NULL	561
-Nurse Clinical Coordinator	24625	assignedrole		RN Care Manager	7874	rn-carecoordinator	6	NULL	NULL	60
+Nurse Clinical Coordinator	24625	assignedrole		RN Care Manager	7874	rn-carecoordinator	7	NULL	NULL	60
 Nurse Clinical Educator	24626	assignedrole		Nurse Educator	7905	rn-education	11	NULL	NULL	20
 Nurse Clinician	24627	assignedrole		Nurse Clinician	7991	rn-nurseclinician	1	NULL	NULL	8116
 Nurse Companion	24628	assignedrole		Nurse Companion	8105	rnrncompanion	1	NULL	NULL	5
@@ -22474,7 +22474,7 @@ Nursing Care Tech	24741	assignedrole		Nurse Tech	9664	tech-nursing	6	NULL	NULL	8
 Nursing Care Technician	24742	assignedrole		Nurse Tech	9664	tech-nursing	5	NULL	NULL	105
 Nursing Clerk	24743	assignedrole		Nurse Coordinator	7893	rn-coordinator	13	NULL	NULL	7
 Nursing Clinical	24744	rolemodifier			NULL		10000	NULL	NULL	312
-Nursing Clinical Coordinator	24745	assignedrole		RN Care Manager	7874	rn-carecoordinator	7	NULL	NULL	20
+Nursing Clinical Coordinator	24745	assignedrole		RN Care Manager	7874	rn-carecoordinator	8	NULL	NULL	20
 Nursing Consultant	24746	assignedrole		Nurse Consultant	7892	rn-consultant	2	NULL	NULL	76
 Nursing Coord	24747	assignedrole		Nurse Coordinator	7893	rn-coordinator	15	NULL	NULL	3
 Nursing Coordinator	24748	assignedrole		Nurse Coordinator	7893	rn-coordinator	4	NULL	NULL	84
@@ -28862,7 +28862,7 @@ RN Care	31700	rolemodifier			7874	rn-carecoordinator	10000	NULL	NULL	587
 RN Care Coordinator	31701	assignedrole		RN Care Manager	7874	rn-carecoordinator	2	NULL	NULL	472
 RN Care Manager	31702	assignedrole		RN Care Manager	7874	rn-carecoordinator	1	NULL	NULL	657
 RN Care Mgmt	31703	assignedrole		RN Case Manager	6173	manager-nursecase	21	NULL	NULL	2
-RN Care Supervisor	31704	assignedrole		RN Care Manager	7874	rn-carecoordinator	9	NULL	NULL	1
+RN Care Supervisor	31704	assignedrole		RN Care Manager	7874	rn-carecoordinator	10	NULL	NULL	1
 RN Care Transition	31705	assignedrole		Transition Nurse	8083	rn-transition	12	NULL	NULL	2
 RN Case	31706	rolemodifier			6173	manager-nursecase	10000	NULL	NULL	3390
 RN Case Coordinator	31707	assignedrole		RN Case Manager	6173	manager-nursecase	16	NULL	NULL	7
@@ -28885,7 +28885,7 @@ RN Circulator	31723	assignedrole		RN Circulator	1045	circulator	2	NULL	NULL	147
 RN Clinic Charge	31724	assignedrole		Clinic Charge Nurse	7883	rn-clinicalcharge	2	NULL	NULL	1
 RN Clinical	31725	assignedrole		Clinical Nurse	7881	rn-clinical	2	NULL	NULL	2365
 RN Clinical Appeals	31726	assignedrole		Clinical Appeals RN	7882	rn-clinicalappeal	2	NULL	NULL	3
-RN Clinical Coord	31727	assignedrole		RN Care Manager	7874	rn-carecoordinator	8	NULL	NULL	9
+RN Clinical Coord	31727	assignedrole		RN Care Manager	7874	rn-carecoordinator	9	NULL	NULL	9
 RN Clinical Coordinator	31728	assignedrole		RN Care Manager	7874	rn-carecoordinator	4	NULL	NULL	159
 RN Clinical Documentation	31729	assignedrole		RN Clinical Documentation Specialist	7884	rn-clinicaldocumentation	3	NULL	NULL	22
 RN Clinical Documentation Specialist	31730	assignedrole		RN Clinical Documentation Specialist	7884	rn-clinicaldocumentation	1	NULL	NULL	90
@@ -30132,7 +30132,7 @@ Security System	33060	rolemodifier			NULL		10000	NULL	NULL	1787
 Security System Engineer	33061	assignedrole		Security Engineer	2929	engineer-itsecurity	9	NULL	NULL	17
 Security System Technician	33063	assignedrole		Security System Technician	9877	technician-securitysystem	1	NULL	NULL	23
 Security Systems	33064	rolemodifier			NULL		10000	NULL	NULL	28459
-Security Systems Administrator	33065	assignedrole		Security Systems Administrator	95	administrator-securitysystem	1	NULL	NULL	17
+Security Systems Administrator	33065	assignedrole		Security Administrator	94	administrator-security	3	NULL	NULL	17
 Security Systems Analyst	33066	assignedrole		Security Systems Specialist	9126	specialist-securitysystem	2	NULL	NULL	23
 Security Systems Engineer	33067	assignedrole		Security Engineer	2929	engineer-itsecurity	4	NULL	NULL	293
 Security Systems Integrator	33068	assignedrole		Security Systems Integrator	3647	integrator-securitysystem	1	NULL	NULL	20
@@ -31525,15 +31525,17 @@ SQL Analyst	34652	assignedrole		Database Analyst	174	analyst-database	5	NULL	NUL
 SQL Consultant	34653	assignedrole		Database Analyst	174	analyst-database	7	NULL	NULL	41
 SQL Data	34654	rolemodifier			NULL		10000	NULL	NULL	3544
 SQL Data Analyst	34655	assignedrole		Database Analyst	174	analyst-database	3	NULL	NULL	150
+SQL Database Administrator	40067	assignedrole		SQL DBA	98	administrator-sqldatabase	2	NULL	NULL	540
+SQL Database Developer	40068	assignedrole		SQL Developer	10404	developer-sqldatabase	2	NULL	NULL	593
 SQL DBA	34656	assignedrole		SQL DBA	98	administrator-sqldatabase	1	NULL	NULL	2654
-SQL Developer	34657	assignedrole		Database Developer	1876	developer-database	1	NULL	NULL	23431
+SQL Developer	34657	assignedrole		SQL Developer	10404	developer-sqldatabase	1	NULL	NULL	23431
 SQL Jobs	34658	assignedrole			5003	jobs-sql	1	NULL	NULL	46480
-SQL Manager	34659	assignedrole		Database Administrator	61	administrator-database	8	NULL	NULL	36
+SQL Manager	34659	assignedrole		SQL DBA	98	administrator-sqldatabase	4	NULL	NULL	36
 SQL Report Analyst	34660	assignedrole		Data Reporting Analyst	175	analyst-datareporting	3	NULL	NULL	7
 SQL Server	34661	rolemodifier	Try SQL.		NULL		10000	NULL	NULL	44551
-SQL Server DBA	34662	assignedrole		SQL DBA	98	administrator-sqldatabase	2	NULL	NULL	176
-SQL Server Jobs	34663	assignedrole			5004	jobs-sqlserver	1	NULL	NULL	5357
-SQL Supervisor	34664	assignedrole		Database Administrator	61	administrator-database	13	NULL	NULL	1
+SQL Server DBA	34662	assignedrole		SQL DBA	98	administrator-sqldatabase	3	NULL	NULL	176
+SQL Server Jobs	34663	assignedrole			5003	jobs-sql	2	NULL	NULL	5357
+SQL Supervisor	34664	assignedrole		SQL DBA	98	administrator-sqldatabase	6	NULL	NULL	1
 SQL Tech	34665	assignedrole		Database Analyst	174	analyst-database	8	NULL	NULL	33
 Square	34666	rolemodifier			NULL		10000	NULL	NULL	557494
 Square Dance	34667	rolemodifier			NULL		10000	NULL	NULL	60
@@ -32572,7 +32574,7 @@ Supply Supervisor	35799	assignedrole		Supply Manager	6513	manager-supply	5	NULL	
 Supply Tech	35800	assignedrole		Supply Technician	9890	technician-supply	2	NULL	NULL	191
 Supply Technician	35801	assignedrole		Supply Technician	9890	technician-supply	1	NULL	NULL	1946
 Support	35802	rolemodifier			NULL		10000	NULL	NULL	558666
-Support DBA	35803	assignedrole		Database Administrator	61	administrator-database	9	NULL	NULL	27
+Support DBA	35803	assignedrole		Database Administrator	61	administrator-database	8	NULL	NULL	27
 Support Director	35804	assignedrole		Support Director	2497	director-support	1	NULL	NULL	46
 Support Engineer	35805	assignedrole		Technical Support Specialist	9176	specialist-technicalsupport	1	NULL	NULL	20288
 Support Manager	35806	assignedrole		Support Manager	6517	manager-support	1	NULL	NULL	3034
@@ -34133,7 +34135,7 @@ Transmission Supervisor	37538	assignedrole		Manager Transmission	6574	manager-tr
 Transmission System	37539	rolemodifier			NULL		10000	NULL	NULL	87
 Transmitter	37541	rolemodifier			NULL		10000	NULL	NULL	265
 Transplant	37543	rolemodifier			NULL		10000	NULL	NULL	27244
-Transplant Assistant	37544	assignedrole		Certified Nursing Assistant	363	assistant-certnursing	37	NULL	NULL	2
+Transplant Assistant	37544	assignedrole		Certified Nursing Assistant	363	assistant-certnursing	38	NULL	NULL	2
 Transplant Case Manager	37545	assignedrole		Transplant Case Manager	6576	manager-transplantcase	1	NULL	NULL	2
 Transplant Case Manager RN	37546	assignedrole		RN Case Manager	6173	manager-nursecase	22	NULL	NULL	2
 Transplant Case Supervisor	37547	assignedrole		Transplant Case Manager	6576	manager-transplantcase	2	NULL	NULL	1
