@@ -1,5 +1,5 @@
 # The Design of the Index and Search File
-The purpose of this section is to explain the design of the index and search files.  
+The purpose of this section is to explain the design of the index and search files.  I finish with a discussion on quality.
 
 ## TLDR;
 The index file only recognizes job titles and also indexes any parent job titles and any relevant searches.
@@ -59,6 +59,7 @@ Search Results:
 
     1. security engineer
 
+The search file provides a scalable search, but might not provide the best results for job seekers.
 
 ## The Alternative Search File - synonym_job_titles_for_search_alternative.txt
 The alternative search file is a more resource-intensive search that will expand a job search to look for any other job search synonyms and the any relevant job titles.
@@ -82,3 +83,8 @@ Search Results:
 
     1. security engineer
     2. cyber security
+
+The alternative search file provides better search results to job seekers, but it is at the cost of scalability.
+
+## The Quality of Job Titles used in Job Openings and the Thesaurus
+The trade-off between a scalable search solution and high quality search results is false.  Job search engines and/or talent acquisition solutions can inform recruiters when their job openings do not match a job title in the thesaurus.  Check out the Job Title Generator in the thesaurus or on Enlighten Jobs.  The Job Title Generator would tell the recruiter that it is not a job title and they could search the thesaurus for the closest match.
