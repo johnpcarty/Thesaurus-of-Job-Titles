@@ -1385,7 +1385,6 @@ ruby on rails developer, rails developer, ruby developer, ruby on rails engineer
 salesforce developer, sales force developer, salesforce specialist => salesforce_developer
 security developer => security_developer
 sharepoint developer, sharepoint administrator, sharepoint admin, sharepoint consultant, sharepoint specialist => sharepoint_developer
-sql developer, sql database developer => sql_developer
 ssrs developer => ssrs_developer
 visualization developer => visualization_developer
 web developer, front end developer, web designer, web application developer, front end engineer, website designer, web engineer, web applications developer, website developer, web programmer, web architect, web site designer, web software developer, web application engineer, web applications engineer => web_developer
@@ -8375,3 +8374,4 @@ social media editor => social_media_editor
 staff writer => staff_writer
 technical writer, technical editor, tech writer, technical publications writer, specifications writer, engineering technical writer, principal technical writer, engineering writer => technical_writer
 ticket writer => ticket_writer
+sql developer, sql database developer => sql_developer
