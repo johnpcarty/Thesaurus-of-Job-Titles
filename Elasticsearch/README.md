@@ -152,7 +152,7 @@ I search for database admin and get results with DBA and Database Administrator
     }
     '
 
-When I ran it, the query returned 35 results.
+When I ran it, the query returned 25 results.
 
     {
       "took" : 8,
