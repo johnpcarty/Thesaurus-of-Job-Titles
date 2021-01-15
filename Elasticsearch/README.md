@@ -54,7 +54,6 @@ It contains mappings for a type called job that contains a field called job_titl
              "analyzer" : {
                 "my_job_title_analyzer_for_index" : {
                    "filter" : [
-                      "standard",
                       "lowercase",
                       "stop",
                       "my_job_title_filter_for_index"
@@ -64,7 +63,6 @@ It contains mappings for a type called job that contains a field called job_titl
                 },
                 "my_job_title_analyzer_for_search" : {
                    "filter" : [
-                      "standard",
                       "lowercase",
                       "stop",
                       "my_job_title_filter_for_search"
